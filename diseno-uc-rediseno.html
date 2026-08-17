@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Diseño UC | Escuela de Diseño de la Pontificia Universidad Católica de Chile</title>
+<meta name="description" content="Una Escuela que ofrece al país profesionales que lideran la introducción masiva del Diseño en el tejido productivo e institucional, aportando con ello al desarrollo local en un contexto global." />
+<link rel="stylesheet" href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css" />
+<script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
+<style>
+  /* Ajustes mínimos específicos de esta home, todo lo demás usa uc-kitdigital.css */
+  body{background:#fff;}
+  .dno-logo-word{font-family:"Roboto Slab",serif;font-weight:700;font-size:1.35rem;color:#173f8a;line-height:1;}
+  .dno-logo-word span{color:#0176de;}
+  .dno-hero-eyebrow{letter-spacing:2px;}
+  .dno-scroll-x{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;}
+  .dno-scroll-x::-webkit-scrollbar{height:6px;}
+  .dno-scroll-x::-webkit-scrollbar-thumb{background:#c6c6c6;border-radius:4px;}
+  .dno-scroll-x > *{scroll-snap-align:start;flex:0 0 auto;}
+  .dno-news-thumb{width:100%;height:210px;object-fit:cover;display:block;}
+  .dno-avisos-thumb{width:100%;height:150px;object-fit:cover;display:block;}
+  .dno-section-title{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:24px;}
+  .dno-badge-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+  .dno-badge-row img{max-height:56px;width:auto;}
+  .dno-footer-badges p{font-size:.8rem;line-height:1.4;color:#c6c6c6;margin:0;}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="uc-top-bar">
+  <div class="container">
+    <div class="row align-items-center top-bar_links-container">
+      <div class="col-12 col-lg-8">
+        <ul class="top-bar_links">
+          <li><a href="https://www.uc.cl/" class="uc-link">La Universidad</a></li>
+          <li><a href="http://fadeu.uc.cl/" class="uc-link">Facultad de Arquitectura, Diseño y Estudios Urbanos</a></li>
+          <li><a href="http://bibliotecas.uc.cl/" class="uc-link">Bibliotecas</a></li>
+          <li><a href="https://portal.uc.cl/" class="uc-link">Mi Portal UC</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-4 d-none d-lg-flex justify-content-end">
+        <ul class="top-bar_links">
+          <li><a href="https://diseno.uc.cl" class="uc-link"><b>ESP</b></a></li>
+          <li><a href="https://diseno.uc.cl/english" class="uc-link">ENG</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="uc-navbar">
+  <div class="uc-navbar_mobile-bar navbar-brand">
+    <a href="https://diseno.uc.cl" class="uc-navbar_mobile-logo navbar-light d-flex align-items-center">
+      <span class="dno-logo-word">Diseño<span> UC</span></span>
+    </a>
+    <button class="uc-navbar_mobile-button" aria-label="Abrir menú" data-uc-toggle-mobile-nav>
+      <span class="uc-icon"></span>
+    </button>
+  </div>
+
+  <div class="container d-none d-lg-block">
+    <div class="row align-items-center">
+      <div class="col-3">
+        <a href="https://diseno.uc.cl" class="d-flex align-items-center" style="gap:12px;text-decoration:none;">
+          <img src="https://diseno.uc.cl/wp-content/themes/dno/img/escuela-de-diseno-uc.svg" alt="Escuela de Diseño UC" style="height:48px;" />
+        </a>
+      </div>
+      <div class="col-9">
+        <ul class="uc-navbar_nav">
+          <li class="nav-item"><a href="https://diseno.uc.cl" class="uc-btn active">Inicio</a></li>
+          <li class="nav-item">
+            <button class="uc-btn" data-uc-dropdown-trigger="menu-escuela">Escuela <span class="uc-icon icon-size--sm">arrow_drop_down</span></button>
+          </li>
+          <li class="nav-item">
+            <button class="uc-btn" data-uc-dropdown-trigger="menu-programas">Programas Académicos <span class="uc-icon icon-size--sm">arrow_drop_down</span></button>
+          </li>
+          <li class="nav-item">
+            <button class="uc-btn" data-uc-dropdown-trigger="menu-idt">Investigación, Desarrollo y Transferencia <span class="uc-icon icon-size--sm">arrow_drop_down</span></button>
+          </li>
+          <li class="nav-item">
+            <button class="uc-btn" data-uc-dropdown-trigger="menu-comunicaciones">Comunicaciones <span class="uc-icon icon-size--sm">arrow_drop_down</span></button>
+          </li>
+          <li class="nav-item">
+            <button class="uc-btn" data-uc-dropdown-trigger="menu-educ">Educación Continua <span class="uc-icon icon-size--sm">arrow_drop_down</span></button>
+          </li>
+          <li class="nav-item" style="flex-grow:0;border-right:none;">
+            <a href="#buscadorModal" class="uc-btn" aria-label="Buscar"><span class="uc-icon">search</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="uc-hero" aria-label="Portada Escuela de Diseño UC">
+  <img
+    class="uc-hero__bg-img"
+    src="https://diseno.uc.cl/wp-content/uploads/2025/01/gifffff_banner.gif"
+    alt="Estudiantes y proyectos de la Escuela de Diseño UC" />
+  <div class="uc-hero__dark-gradient"></div>
+  <div class="container">
+    <div class="uc-hero__content uc-hero__content--bottom">
+      <div style="max-width:720px;padding-bottom:48px;">
+        <p class="uc-subtitle dno-hero-eyebrow" style="color:#fec60d;">Escuela de Diseño UC</p>
+        <h1 class="color-white" style="margin-bottom:16px;">Diseño UC entre las mejores escuelas de diseño del mundo</h1>
+        <p class="p-size--lg color-white" style="margin-bottom:24px;">Una Escuela que forma profesionales que lideran la introducción masiva del Diseño en el tejido productivo e institucional, aportando al desarrollo local en un contexto global.</p>
+        <a href="https://diseno.uc.cl/2024/04/diseno-uc-dentro-de-las-mejores-escuelas-de-diseno-del-mundo/" class="uc-btn btn-secondary" style="width:fit-content;">
+          Conoce la noticia <span class="uc-icon icon-color--white">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- AVISO DESTACADO / PRÁCTICAS -->
+<section class="uc-border-bottom" style="padding:20px 0;background:#f6f6f6;">
+  <div class="container">
+    <a href="https://forms.office.com/r/BQQ4aTcf08" class="d-flex align-items-center justify-content-between" style="text-decoration:none;gap:16px;flex-wrap:wrap;">
+      <span class="d-flex align-items-center" style="gap:12px;">
+        <span class="uc-tag">Aviso</span>
+        <span class="text-weight--medium" style="color:#000;">Convocatoria abierta para Prácticas Profesionales — postula ahora</span>
+      </span>
+      <span class="uc-btn btn-inline btn-inline--bold">Ver formulario <span class="uc-icon">arrow_forward</span></span>
+    </a>
+  </div>
+</section>
+
+<!-- LANZAMIENTOS DESTACADOS -->
+<section style="padding:48px 0;">
+  <div class="container">
+    <div class="dno-section-title">
+      <div>
+        <p class="uc-subtitle" style="color:#0176de;">Agenda</p>
+        <h2>Próximas actividades</h2>
+      </div>
+      <a href="https://diseno.uc.cl/comunicaciones/actualidad/agenda" class="uc-btn btn-inline btn-inline--bold">Ver todas <span class="uc-icon icon-shape--rounded">add</span></a>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <a href="https://diseno.uc.cl/2026/08/inauguracion-vivir-en-la-calle-soluciones-de-diseno-ante-una-emergencia/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <div class="uc-card_header">Martes 25 de agosto</div>
+          <div class="uc-card_body">
+            <h3 class="h4">Inauguración || Vivir en la calle: soluciones de diseño ante una emergencia</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="https://diseno.uc.cl/2026/08/lanzamiento-como-disenar-una-revolucion/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <div class="uc-card_header">Jueves 13 de agosto</div>
+          <div class="uc-card_body">
+            <h3 class="h4">LANZAMIENTO | Cómo diseñar una revolución. Trayectoria de un proyecto UC-MIT</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-4">
+        <a href="https://diseno.uc.cl/2026/08/lanzamiento-cartografia-terrestre-de-la-ia/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <div class="uc-card_header">Jueves 13 de agosto</div>
+          <div class="uc-card_body">
+            <h3 class="h4">LANZAMIENTO | Cartografía terrestre de la IA</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVISOS / SITIOS DE INTERÉS -->
+<section style="padding:8px 0 48px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <a href="http://artesania.uc.cl/" class="uc-card card-type--link" style="text-decoration:none;">
+          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-artesania.png" alt="Artesanía UC" />
+          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">Artesanía UC <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="https://diseno.uc.cl/educacion-continua/diplomados/" class="uc-card card-type--link" style="text-decoration:none;">
+          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-diplomados.png" alt="Diplomados" />
+          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">Diplomados <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="https://magisterdiseno.uc.cl/" class="uc-card card-type--link" style="text-decoration:none;">
+          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-mada.png" alt="MADA UC" />
+          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">MADA UC <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="http://revistadisena.uc.cl" class="uc-card card-type--link" style="text-decoration:none;">
+          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-revista-disena.jpg" alt="Revista Diseña" />
+          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">Revista Diseña <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section style="padding:16px 0 56px;background:#f6f6f6;">
+  <div class="container">
+    <div class="dno-section-title">
+      <div>
+        <p class="uc-subtitle" style="color:#0176de;">Comunicaciones</p>
+        <h2>Noticias de nuestra Escuela</h2>
+      </div>
+      <a href="https://diseno.uc.cl/comunicaciones/actualidad/noticias" class="uc-btn btn-inline btn-inline--bold">Ver todas las noticias <span class="uc-icon icon-shape--rounded">add</span></a>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-24">
+        <a href="https://diseno.uc.cl/2026/08/tomas-vivanco-realizo-diversas-actividades-en-el-mit-durante-la-conferencia-fab26/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/FAB26-Workshop-1.jpeg" alt="Tomás Vivanco en el MIT" />
+          <div class="uc-card_body">
+            <p class="uc-subtitle" style="color:#707070;">17-08-2026</p>
+            <h3 class="h5">Tomás Vivanco realizó diversas actividades en el MIT durante la Conferencia FAB26</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-24">
+        <a href="https://diseno.uc.cl/2026/08/tomas-vivanco-expuso-en-mit-museum-su-proyecto-hy-technologies/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Hy-Technologies-MIT-Museum-edited.jpeg" alt="Hy-Technologies MIT Museum" />
+          <div class="uc-card_body">
+            <p class="uc-subtitle" style="color:#707070;">17-08-2026</p>
+            <h3 class="h5">Tomás Vivanco expuso en MIT Museum su proyecto «Hy-Technologies»</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-24">
+        <a href="https://diseno.uc.cl/2026/08/inauguracion-vivir-en-la-calle-soluciones-de-diseno-ante-una-emergencia/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Post-Vivir-la-calle-scaled.png" alt="Vivir en la calle" />
+          <div class="uc-card_body">
+            <p class="uc-subtitle" style="color:#707070;">14-08-2026</p>
+            <h3 class="h5">Inauguración || Vivir en la calle: soluciones de diseño ante una emergencia</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-24">
+        <a href="https://diseno.uc.cl/2026/08/mada-uc-y-sag-colaboran-para-mejorar-la-experiencia-de-viajar-con-mascotas-al-extranjero/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/image-2-scaled.png" alt="MADA UC y SAG" />
+          <div class="uc-card_body">
+            <p class="uc-subtitle" style="color:#707070;">14-08-2026</p>
+            <h3 class="h5">MADA UC y SAG colaboran para mejorar la experiencia de viajar con mascotas al extranjero</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-24">
+        <a href="https://diseno.uc.cl/2026/08/revista-disena-aumenta-su-impacto-y-se-posiciona-entre-las-publicaciones-mejor-evaluadas-de-su-categoria-en-scopus/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Disena-Indexeada-1-scaled.png" alt="Revista Diseña indexada" />
+          <div class="uc-card_body">
+            <p class="uc-subtitle" style="color:#707070;">14-08-2026</p>
+            <h3 class="h5">Revista Diseña se posiciona entre las publicaciones mejor evaluadas de su categoría en Scopus</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-24">
+        <a href="https://diseno.uc.cl/2026/08/dora-sanchez-presenta-las-juntadas-en-la-decima-edicion-del-congreso-de-la-memory-studies-association-en-buenos-aires/" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
+          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Noticia-Dora-scaled.jpeg" alt="Dora Sánchez en Buenos Aires" />
+          <div class="uc-card_body">
+            <p class="uc-subtitle" style="color:#707070;">13-08-2026</p>
+            <h3 class="h5">Dora Sánchez presenta "Las juntadas" en el Congreso de la Memory Studies Association</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:8px;">
+      <a href="https://diseno.uc.cl/comunicaciones/actualidad/noticias" class="uc-btn btn-primary" style="display:inline-flex;">VER ARCHIVO DE NOTICIAS <span class="uc-icon">arrow_forward</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMAS ACADÉMICOS -->
+<section style="padding:56px 0;">
+  <div class="container">
+    <div class="dno-section-title">
+      <div>
+        <p class="uc-subtitle" style="color:#0176de;">Formación</p>
+        <h2>Nuestros programas académicos</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4 mb-24">
+        <div class="uc-card card-height--same">
+          <div class="uc-card_body">
+            <h3 class="h4">Pregrado</h3>
+            <p class="p-size--sm" style="color:#707070;">Formación integral en diseño, centrada en la interacción entre ser humano y entorno, con foco en el desarrollo local en un contexto global.</p>
+            <a href="https://diseno.uc.cl/programas-academicos/pregrado/perfil-de-egreso" class="uc-btn btn-inline btn-inline--bold" style="margin-top:auto;">Perfil de egreso <span class="uc-icon">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-24">
+        <div class="uc-card card-height--same">
+          <div class="uc-card_body">
+            <h3 class="h4">Postgrado — MADA UC</h3>
+            <p class="p-size--sm" style="color:#707070;">Magíster en Diseño Avanzado orientado a la investigación y a la transferencia de conocimiento en diseño.</p>
+            <a href="https://diseno.uc.cl/programas-academicos/postgrado/mada-uc" class="uc-btn btn-inline btn-inline--bold" style="margin-top:auto;">Conoce el MADA UC <span class="uc-icon">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-24">
+        <div class="uc-card card-height--same">
+          <div class="uc-card_body">
+            <h3 class="h4">Educación Continua</h3>
+            <p class="p-size--sm" style="color:#707070;">Diplomados y cursos para seguir formándote en diseño a lo largo de tu trayectoria profesional.</p>
+            <a href="https://diseno.uc.cl/educacion-continua/diplomados" class="uc-btn btn-inline btn-inline--bold" style="margin-top:auto;">Ver diplomados <span class="uc-icon">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACREDITACIONES -->
+<section style="padding:32px 0;background:#f6f6f6;">
+  <div class="container">
+    <div class="dno-badge-row justify-content-center">
+      <img src="https://diseno.uc.cl/wp-content/themes/dno/img/ico-cumulus.png" alt="Cumulus" />
+      <p class="p-size--sm" style="max-width:340px;color:#707070;">International Association of Universities and Colleges of Art, Design and Media</p>
+      <img src="https://diseno.uc.cl/wp-content/themes/dno/img/ico-acredita.png" alt="CNA acreditación" />
+      <p class="p-size--sm" style="max-width:240px;color:#707070;">Carrera acreditada — 7 años / 2015-2022</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="uc-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 mb-24">
+        <img src="https://diseno.uc.cl/wp-content/themes/dno/img/escuela-de-diseno-uc.svg" alt="Escuela de Diseño UC" style="height:44px;filter:invert(1) brightness(2);" />
+        <p class="p-size--sm" style="margin-top:16px;color:#c6c6c6;">Pontificia Universidad Católica de Chile</p>
+      </div>
+
+      <div class="col-6 col-lg-3 mb-24">
+        <p class="uc-footer_list-title">Contacto</p>
+        <ul class="uc-footer_list">
+          <li>Fono: +56 2 23545534</li>
+          <li>El Comendador 1916, Providencia, Santiago de Chile</li>
+          <li><a href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/" class="link-inline">Ver mapa <span class="uc-icon icon-color--white icon-size--sm">location_on</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3 mb-24">
+        <p class="uc-footer_list-title">Sitio</p>
+        <ul class="uc-footer_list">
+          <li><a href="https://diseno.uc.cl/escuela/historia">Historia</a></li>
+          <li><a href="https://diseno.uc.cl/escuela/personas">Personas</a></li>
+          <li><a href="https://diseno.uc.cl/comunicaciones/actualidad/noticias">Noticias</a></li>
+          <li><a href="https://diseno.uc.cl/comunicaciones/actualidad/ofertas-laborales/">Ofertas laborales</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-3 mb-24">
+        <p class="uc-footer_list-title">Síguenos</p>
+        <ul class="uc-footer_social">
+          <li><a href="https://www.instagram.com/disenouc/" aria-label="Instagram"><span class="uc-icon">photo_camera</span></a></li>
+          <li><a href="https://www.facebook.com/escueladisenouc" aria-label="Facebook"><span class="uc-icon">thumb_up</span></a></li>
+          <li><a href="https://www.linkedin.com/in/diseño-uc/" aria-label="LinkedIn"><span class="uc-icon">work</span></a></li>
+          <li><a href="https://twitter.com/diseno_uc" aria-label="Twitter"><span class="uc-icon">alternate_email</span></a></li>
+          <li><a href="https://www.youtube.com/channel/UCLKctg7Z2KAw61fHh1y1aXw" aria-label="YouTube"><span class="uc-icon">play_circle</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border-color:#173f8a;margin:24px 0;" />
+
+    <p class="p-size--sm" style="color:#c6c6c6;padding-bottom:24px;">
+      Los contenidos de este sitio web son publicados bajo una
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional</a>.
+      <a href="https://diseno.uc.cl/">ESP</a> | <a href="https://diseno.uc.cl/english">ENG</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
