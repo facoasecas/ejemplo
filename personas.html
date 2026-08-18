@@ -25,61 +25,182 @@
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="uc-top-bar">
-  <div class="container">
-    <div class="row align-items-center top-bar_links-container">
-      <div class="col-12 col-lg-8">
-        <ul class="top-bar_links">
-          <li><a href="https://www.uc.cl/" class="uc-link">La Universidad</a></li>
-          <li><a href="http://fadeu.uc.cl/" class="uc-link">Facultad de Arquitectura, Diseño y Estudios Urbanos</a></li>
-          <li><a href="http://bibliotecas.uc.cl/" class="uc-link">Bibliotecas</a></li>
-          <li><a href="https://portal.uc.cl/" class="uc-link">Mi Portal UC</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-lg-4 d-none d-lg-flex justify-content-end">
-        <ul class="top-bar_links">
-          <li><a href="https://diseno.uc.cl" class="uc-link"><b>ESP</b></a></li>
-          <li><a href="https://diseno.uc.cl/english" class="uc-link">ENG</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+  <header class="uc-header">
+    <div id="uc-global-topbar"></div>
+    <nav class="uc-navbar">
+      <!-- Menú para versión Escritorio -->
+      <div class="container d-none d-lg-block">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-xl-2">
+            <img src="https://kit-digital-uc-desa.s3.amazonaws.com/img/logo-uc-azul.svg" alt="Pontificia Universidad Católica de Chile" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-xl-9 pl-60">
+            <div class="h2 text-font--serif text-color--blue mt-24">Diseño UC</div>
+          </div>
+        </div>
+        <ul class="uc-navbar_nav" style="position: relative; z-index: 99;">
+          <li class="nav-item ">
+            <a href="index.html" class="uc-btn btn-inline">Inicio </a>
+          </li>
+          <li class="nav-item ">
+            <a href="historia.html" class="uc-btn btn-inline">Historia </a>
+          </li>
+          <li class="nav-item ">
+            <a href="personas.html" class="uc-btn btn-inline">Personas </a>
+          </li>
+          <li class="nav-item ">
+            <a href="diplomados.html" class="uc-btn btn-inline">Diplomados </a>
+          </li>
+          <li class="nav-item uc-navbar-dropdown">
+            <a href="/programas-de-estudio/" class="uc-btn btn-inline">Paginas <i class="uc-icon">arrow_drop_down</i> </a>
+            <ul class="uc-navbar-dropdown_menu">
+              <li class="dropdown_item--heading">
+                <a href="#" class="uc-btn">Página padre</a>
+                <ul class="uc-navbar-dropdown_child">
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 1</a>
+                  </li>
 
-<!-- NAVBAR -->
-<nav class="uc-navbar">
-  <div class="uc-navbar_mobile-bar navbar-brand">
-    <a href="index.html" class="uc-navbar_mobile-logo navbar-light d-flex align-items-center">
-      <span class="dno-logo-word">Diseño<span> UC</span></span>
-    </a>
-    <button class="uc-navbar_mobile-button" aria-label="Abrir menú" data-uc-toggle-mobile-nav>
-      <span class="uc-icon"></span>
-    </button>
-  </div>
-  <div class="container d-none d-lg-block">
-    <div class="row align-items-center">
-      <div class="col-3">
-        <a href="index.html" class="d-flex align-items-center" style="gap:12px;text-decoration:none;">
-          <img src="https://diseno.uc.cl/wp-content/themes/dno/img/escuela-de-diseno-uc.svg" alt="Escuela de Diseño UC" style="height:48px;" />
-        </a>
-      </div>
-      <div class="col-9">
-        <ul class="uc-navbar_nav">
-          <li class="nav-item"><a href="index.html" class="uc-btn active">Inicio</a></li>
-          <li class="nav-item"><a href="historia.html" class="uc-btn active">Historia</a></li>
-          <li class="nav-item"><a href="personas.html" class="uc-btn active">Personas</a></li>
-          <li class="nav-item">
-            <button class="uc-btn" data-uc-dropdown-trigger="menu-educ">Educación Continua <span class="uc-icon icon-size--sm">arrow_drop_down</span></button>
-          </li>
-          <li class="nav-item" style="flex-grow:0;border-right:none;">
-            <a href="#buscadorModal" class="uc-btn" aria-label="Buscar"><span class="uc-icon">search</span></a>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 2</a>
+                  </li>
+
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 3</a>
+                  </li>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 4</a>
+                  </li>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 5</a>
+                  </li>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 6</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown_item--heading">
+                <a href="#" class="uc-btn">Página padre 2</a>
+                <ul class="uc-navbar-dropdown_child">
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 7</a>
+                  </li>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 8</a>
+                  </li>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 9</a>
+                  </li>
+                  <li class="uc-navbar-dropdown_item">
+                    <a href="#" class="uc-btn">Pagina 10</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
-    </div>
-  </div>
-</nav>
+      <!-- Menú para versión Móvil -->
+      <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
+        <div class="uc-navbar_mobile-bar navbar-brand">
+          <div class="uc-navbar_mobile-logo navbar-light">
+            <div class="h2 text-font--serif text-color--blue">Título</div>
+          </div>
+          <a href="javascript:void(0);" class="uc-navbar_mobile-button">
+            <span class="uc-icon"></span>
+          </a>
+        </div>
+        <div class="uc-navbar_mobile-content">
+          <ul class="uc-navbar_mobile-list">
+            <li class="list-item has-list-children">
+              <a class="list-open" href="#">
+                Pregrado
+                <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+              </a>
+              <ul class="list-item list-children">
+                <li class="list-item">
+                  <a href="#" class="list-close">
+                    <div class="uc-icon icon-size--sm">
+                      arrow_back_ios
+                    </div>
+                    Pregrado
+                  </a>
+                </li>
+                <!-- loop de elementos -->
+                <li class="list-item has-list-children">
+                  <a href="#" class="list-open">
+                    Item 1
+                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                  </a>
+                  <ul class="list-children">
+                    <li class="list-item">
+                      <a href="#" class="list-close text-color--gray">
+                        <span class="uc-icon">arrow_back_ios</span>
+                        Item child
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a href="/">Item child</a>
+                    </li>
+                    <li class="list-item">
+                      <a href="/">Item child</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <a href="/">
+                    Item child
+                    <i class="uc-icon">launch</i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a href="/">Item child</a>
+                </li>
+                <li class="list-item">
+                  <a href="/">Item child</a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="#">Item 2</a>
+            </li>
+            <li class="list-item has-list-children">
+              <a class="list-open" href="#">
+                Desplegable 2
+                <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+              </a>
+              <ul class="list-item list-children">
+                <li class="list-item">
+                  <a href="#" class="list-close">
+                    <div class="uc-icon icon-size--sm">
+                      arrow_back_ios
+                    </div>
+                    Desplegable 2
+                  </a>
+                </li>
+                <!-- loop de elementos -->
+                <li class="list-item">
+                  <a href="#">Item 1</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Item 2</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Item 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="#">Item 4</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Item 5</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
 
 <div class="container">
   <!-- TITULO Y BREADCRUMB -->
