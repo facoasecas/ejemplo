@@ -1,602 +1,2099 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="referrer" content="no-referrer" />
-<title>Personas | Escuela de Diseño UC</title>
-<meta name="description" content="Conoce a las directivas, administrativas y académicas de la Escuela de Diseño de la Pontificia Universidad Católica de Chile." />
-<link rel="stylesheet" href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css" />
-<script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
-<style>
-  body{background:#fff;}
-  .dno-logo-word{font-family:"Roboto Slab",serif;font-weight:700;font-size:1.35rem;color:#173f8a;line-height:1;}
-  .dno-logo-word span{color:#0176de;}
-  .dno-person-card{height:100%;}
-  .dno-person-photo{width:100%;aspect-ratio:1/1;object-fit:cover;background-color:#f0f0f0;display:block;}
-  .dno-person-name{font-size:1rem;margin:0 0 4px;}
-  .dno-person-role{font-size:.8rem;color:#707070;margin:0;}
-  .dno-person-mail{font-size:.75rem;word-break:break-all;}
-  .dno-section-heading{display:flex;align-items:center;gap:16px;margin:56px 0 24px;}
-  .dno-section-heading:first-of-type{margin-top:0;}
-  .dno-section-heading .uc-text-divider{flex:0 0 auto;}
-  .dno-az-filter{margin-bottom:32px;}
-</style>
-</head>
-<body>
-
-  <header class="uc-header">
-    <div id="uc-global-topbar"></div>
-    <nav class="uc-navbar">
-      <!-- Menú para versión Escritorio -->
-      <div class="container d-none d-lg-block">
-        <div class="row align-items-center">
-          <div class="col-lg-3 col-xl-2">
-            <img src="https://kit-digital-uc-desa.s3.amazonaws.com/img/logo-uc-azul.svg" alt="Pontificia Universidad Católica de Chile" class="img-fluid">
-          </div>
-          <div class="col-lg-8 col-xl-9 pl-60">
-            <div class="h2 text-font--serif text-color--blue mt-24">Diseño UC</div>
-          </div>
-        </div>
-        <ul class="uc-navbar_nav" style="position: relative; z-index: 99;">
-          <li class="nav-item ">
-            <a href="index.html" class="uc-btn btn-inline">Inicio </a>
-          </li>
-          <li class="nav-item ">
-            <a href="historia.html" class="uc-btn btn-inline">Historia </a>
-          </li>
-          <li class="nav-item ">
-            <a href="personas.html" class="uc-btn btn-inline">Personas </a>
-          </li>
-          <li class="nav-item ">
-            <a href="diplomados.html" class="uc-btn btn-inline">Diplomados </a>
-          </li>
-          <li class="nav-item uc-navbar-dropdown">
-            <a href="/programas-de-estudio/" class="uc-btn btn-inline">Paginas <i class="uc-icon">arrow_drop_down</i> </a>
-            <ul class="uc-navbar-dropdown_menu">
-              <li class="dropdown_item--heading">
-                <a href="#" class="uc-btn">Página padre</a>
-                <ul class="uc-navbar-dropdown_child">
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 1</a>
-                  </li>
-
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 2</a>
-                  </li>
-
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 3</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 4</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 5</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 6</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown_item--heading">
-                <a href="#" class="uc-btn">Página padre 2</a>
-                <ul class="uc-navbar-dropdown_child">
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 7</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 8</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 9</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 10</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!-- Menú para versión Móvil -->
-      <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
-        <div class="uc-navbar_mobile-bar navbar-brand">
-          <div class="uc-navbar_mobile-logo navbar-light">
-            <div class="h2 text-font--serif text-color--blue">Título</div>
-          </div>
-          <a href="javascript:void(0);" class="uc-navbar_mobile-button">
-            <span class="uc-icon"></span>
-          </a>
-        </div>
-        <div class="uc-navbar_mobile-content">
-          <ul class="uc-navbar_mobile-list">
-            <li class="list-item has-list-children">
-              <a class="list-open" href="#">
-                Pregrado
-                <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-              </a>
-              <ul class="list-item list-children">
-                <li class="list-item">
-                  <a href="#" class="list-close">
-                    <div class="uc-icon icon-size--sm">
-                      arrow_back_ios
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="referrer" content="no-referrer" />
+        <title>Personas | Escuela de Diseño UC</title>
+        <meta
+            name="description"
+            content="Conoce a las directivas, administrativas y académicas de la Escuela de Diseño de la Pontificia Universidad Católica de Chile."
+        />
+        <link
+            rel="stylesheet"
+            href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css"
+        />
+        <script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
+        <style>
+            body {
+                background: #fff;
+            }
+            .dno-logo-word {
+                font-family: "Roboto Slab", serif;
+                font-weight: 700;
+                font-size: 1.35rem;
+                color: #173f8a;
+                line-height: 1;
+            }
+            .dno-logo-word span {
+                color: #0176de;
+            }
+            .dno-person-card {
+                height: 100%;
+            }
+            .dno-person-photo {
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                background-color: #f0f0f0;
+                display: block;
+            }
+            .dno-person-name {
+                font-size: 1rem;
+                margin: 0 0 4px;
+            }
+            .dno-person-role {
+                font-size: 0.8rem;
+                color: #707070;
+                margin: 0;
+            }
+            .dno-person-mail {
+                font-size: 0.75rem;
+                word-break: break-all;
+            }
+            .dno-section-heading {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin: 56px 0 24px;
+            }
+            .dno-section-heading:first-of-type {
+                margin-top: 0;
+            }
+            .dno-section-heading .uc-text-divider {
+                flex: 0 0 auto;
+            }
+            .dno-az-filter {
+                margin-bottom: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="uc-header">
+            <div id="uc-global-topbar"></div>
+            <nav class="uc-navbar">
+                <!-- Menú para versión Escritorio -->
+                <div class="container d-none d-lg-block">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-xl-2">
+                            <img
+                                src="https://kit-digital-uc-desa.s3.amazonaws.com/img/logo-uc-azul.svg"
+                                alt="Pontificia Universidad Católica de Chile"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="col-lg-8 col-xl-9 pl-60">
+                            <div class="h2 text-font--serif text-color--blue mt-24">Diseño UC</div>
+                        </div>
                     </div>
-                    Pregrado
-                  </a>
-                </li>
-                <!-- loop de elementos -->
-                <li class="list-item has-list-children">
-                  <a href="#" class="list-open">
-                    Item 1
-                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-                  </a>
-                  <ul class="list-children">
-                    <li class="list-item">
-                      <a href="#" class="list-close text-color--gray">
-                        <span class="uc-icon">arrow_back_ios</span>
-                        Item child
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <a href="/">Item child</a>
-                    </li>
-                    <li class="list-item">
-                      <a href="/">Item child</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="list-item">
-                  <a href="/">
-                    Item child
-                    <i class="uc-icon">launch</i>
-                  </a>
-                </li>
-                <li class="list-item">
-                  <a href="/">Item child</a>
-                </li>
-                <li class="list-item">
-                  <a href="/">Item child</a>
-                </li>
-              </ul>
-            </li>
-            <li class="list-item">
-              <a href="#">Item 2</a>
-            </li>
-            <li class="list-item has-list-children">
-              <a class="list-open" href="#">
-                Desplegable 2
-                <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-              </a>
-              <ul class="list-item list-children">
-                <li class="list-item">
-                  <a href="#" class="list-close">
-                    <div class="uc-icon icon-size--sm">
-                      arrow_back_ios
+                    <ul class="uc-navbar_nav" style="position: relative; z-index: 99">
+                        <li class="nav-item">
+                            <a href="index.html" class="uc-btn btn-inline">Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="historia.html" class="uc-btn btn-inline">Historia </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="personas.html" class="uc-btn btn-inline">Personas </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="uc-btn btn-inline">Diplomados </a>
+                        </li>
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="/programas-de-estudio/" class="uc-btn btn-inline"
+                                >Paginas <i class="uc-icon">arrow_drop_down</i>
+                            </a>
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Página padre</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 1</a>
+                                        </li>
+
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 2</a>
+                                        </li>
+
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 3</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 4</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 5</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 6</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Página padre 2</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 7</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 8</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 9</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 10</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menú para versión Móvil -->
+                <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
+                    <div class="uc-navbar_mobile-bar navbar-brand">
+                        <div class="uc-navbar_mobile-logo navbar-light">
+                            <div class="h2 text-font--serif text-color--blue">Título</div>
+                        </div>
+                        <a href="javascript:void(0);" class="uc-navbar_mobile-button">
+                            <span class="uc-icon"></span>
+                        </a>
                     </div>
-                    Desplegable 2
-                  </a>
-                </li>
-                <!-- loop de elementos -->
-                <li class="list-item">
-                  <a href="#">Item 1</a>
-                </li>
-                <li class="list-item">
-                  <a href="#">Item 2</a>
-                </li>
-                <li class="list-item">
-                  <a href="#">Item 3</a>
-                </li>
-              </ul>
-            </li>
-            <li class="list-item">
-              <a href="#">Item 4</a>
-            </li>
-            <li class="list-item">
-              <a href="#">Item 5</a>
-            </li>
-          </ul>
+                    <div class="uc-navbar_mobile-content">
+                        <ul class="uc-navbar_mobile-list">
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#">
+                                    Pregrado
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                                </a>
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close">
+                                            <div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Pregrado
+                                        </a>
+                                    </li>
+                                    <!-- loop de elementos -->
+                                    <li class="list-item has-list-children">
+                                        <a href="#" class="list-open">
+                                            Item 1
+                                            <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                                        </a>
+                                        <ul class="list-children">
+                                            <li class="list-item">
+                                                <a href="#" class="list-close text-color--gray">
+                                                    <span class="uc-icon">arrow_back_ios</span>
+                                                    Item child
+                                                </a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="/">Item child</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="/">Item child</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="/">
+                                            Item child
+                                            <i class="uc-icon">launch</i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="/">Item child</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="/">Item child</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Item 2</a>
+                            </li>
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#">
+                                    Desplegable 2
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                                </a>
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close">
+                                            <div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Desplegable 2
+                                        </a>
+                                    </li>
+                                    <!-- loop de elementos -->
+                                    <li class="list-item">
+                                        <a href="#">Item 1</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Item 2</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Item 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Item 4</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Item 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <!-- TITULO Y BREADCRUMB -->
+            <div style="padding: 32px 0 8px">
+                <nav aria-label="breadcrumb">
+                    <ol class="uc-breadcrumb">
+                        <li class="uc-breadcrumb_item">
+                            <a href="https://diseno.uc.cl">Inicio</a
+                            ><span class="uc-icon icon-size--sm">chevron_right</span>
+                        </li>
+                        <li class="uc-breadcrumb_item">
+                            <a href="https://diseno.uc.cl">Escuela</a
+                            ><span class="uc-icon icon-size--sm">chevron_right</span>
+                        </li>
+                        <li class="uc-breadcrumb_item current">Personas</li>
+                    </ol>
+                </nav>
+                <h1 style="margin-top: 16px">Personas</h1>
+                <p class="p-size--lg" style="max-width: 760px; color: #707070">
+                    Conoce al equipo de directivas, administrativas y académicas que forman la comunidad de la Escuela
+                    de Diseño UC.
+                </p>
+            </div>
+
+            <div class="row" style="margin-top: 16px">
+                <!-- SIDEBAR -->
+                <aside class="col-12 col-lg-3" style="margin-bottom: 32px">
+                    <p class="uc-footer_list-title" style="color: #000; margin-bottom: 8px">Escuela</p>
+                    <ul class="uc-navbar-side">
+                        <li><a href="https://diseno.uc.cl/escuela/quienesomos">Quiénes Somos</a></li>
+                        <li><a href="https://diseno.uc.cl/escuela/historia">Historia</a></li>
+                        <li><a href="https://diseno.uc.cl/escuela/infraestructura">Infraestructura</a></li>
+                        <li><a href="https://diseno.uc.cl/escuela/personas" class="active">Personas</a></li>
+                        <li>
+                            <a href="https://diseno.uc.cl/escuela/postulaciones-a-pregrado">Postulaciones a Pregrado</a>
+                        </li>
+                        <li>
+                            <a href="https://diseno.uc.cl/escuela/postulaciones-a-postgrado"
+                                >Postulaciones a Postgrado</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://diseno.uc.cl/escuela/postulaciones-a-educacion-continua"
+                                >Educación Continua Diseño UC</a
+                            >
+                        </li>
+                    </ul>
+
+                    <p class="uc-footer_list-title" style="color: #000; margin: 32px 0 12px">Síguenos</p>
+                    <ul class="uc-social-icons-container" style="justify-content: flex-start">
+                        <ul class="uc-social-icons" style="gap: 0">
+                            <li>
+                                <a href="https://www.instagram.com/disenouc/" aria-label="Instagram"
+                                    ><span class="uc-icon">photo_camera</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/escueladisenouc" aria-label="Facebook"
+                                    ><span class="uc-icon">thumb_up</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/diseño-uc/" aria-label="LinkedIn"
+                                    ><span class="uc-icon">work</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/diseno_uc" aria-label="Twitter"
+                                    ><span class="uc-icon">alternate_email</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCLKctg7Z2KAw61fHh1y1aXw" aria-label="YouTube"
+                                    ><span class="uc-icon">play_circle</span></a
+                                >
+                            </li>
+                        </ul>
+                    </ul>
+                </aside>
+
+                <!-- CONTENIDO -->
+                <div class="col-12 col-lg-9">
+                    <!-- DIRECTIVAS/OS -->
+                    <div class="dno-section-heading">
+                        <h2 class="h3" style="margin: 0">Directivas/os</h2>
+                        <span class="uc-text-divider divider-secondary"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/manns-patricia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/PManns-1.png"
+                                    alt="Patricia Manns"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Patricia Manns</p>
+                                    <p class="dno-person-role">Directora</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/cardenas-lina/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/LinaCardenas-1.png"
+                                    alt="Lina Cárdenas"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Lina Cárdenas</p>
+                                    <p class="dno-person-role">Subdirectora académica</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/julia-begona/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Begonajulia-1.png"
+                                    alt="Begoña Julia"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Begoña Julia</p>
+                                    <p class="dno-person-role">Subdirectora de Investigación</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/gonzalez-alberto/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/AlbertoGonzalez-1.png"
+                                    alt="Alberto González"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Alberto González</p>
+                                    <p class="dno-person-role">Subdirector de Transferencia</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/mora-marcela/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/MarceMora-1.png"
+                                    alt="Marcela Mora"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Marcela Mora</p>
+                                    <p class="dno-person-role">Coordinación de comunicaciones. Docente adjunta.</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/moraga-eduardo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Edgardo-Moraga-1.png"
+                                    alt="Edgardo Moraga"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Edgardo Moraga</p>
+                                    <p class="dno-person-role">Director MADA, Profesor Adjunto</p>
+                                </div></a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- ADMINISTRATIVAS/OS -->
+                    <div class="dno-section-heading">
+                        <h2 class="h3" style="margin: 0">Administrativas/os</h2>
+                        <span class="uc-text-divider divider-secondary"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/perez-mariana/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/MPerez-1.png"
+                                    alt="Mariana Pérez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Mariana Pérez</p>
+                                    <p class="dno-person-role">Secretaria Dirección Diseño</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/salazar-carolina/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/CSalazar-1.png"
+                                    alt="Carolina Salazar"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Carolina Salazar</p>
+                                    <p class="dno-person-role">Coordinadora Académica de la Escuela</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/vega-maria-antonieta/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/TonaVega-1.png"
+                                    alt="Antonieta Vega"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Antonieta Vega</p>
+                                    <p class="dno-person-role">Asistente de Coordinación de Pregrado</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/claudia-saenz/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/ClauSaez-1.png"
+                                    alt="Claudia Saez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Claudia Saez</p>
+                                    <p class="dno-person-role">Asistente Pregrado</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/maria-carolina-melo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/CMelo-1.png"
+                                    alt="María Carolina Melo"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">María Carolina Melo</p>
+                                    <p class="dno-person-role">Coordinadora Académica MADA</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/marcela-mejias/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/MMejias-1.png"
+                                    alt="Marcela Mejías"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Marcela Mejías</p>
+                                    <p class="dno-person-role">Asistente de coordinación Educación Continua</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/hoffmann-karem/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/KaremHoffman-1.png"
+                                    alt="Karem Hoffmann"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Karem Hoffmann</p>
+                                    <p class="dno-person-role">Coordinadora Gestión Académica Educación Continua</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/rodriguez-pilar/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2022/04/PILI.png"
+                                    alt="Pilar Rodríguez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Pilar Rodríguez</p>
+                                    <p class="dno-person-role">Encargada de Gestión de Procesos Académicos</p>
+                                </div></a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- ACADÉMICAS/OS -->
+                    <div class="dno-section-heading">
+                        <h2 class="h3" style="margin: 0">Académicas/os</h2>
+                        <span class="uc-text-divider divider-secondary"></span>
+                    </div>
+
+                    <ul
+                        class="uc-filters_alphabetic dno-az-filter"
+                        id="filtroAlfabetico"
+                        role="navigation"
+                        aria-label="Filtro alfabético de académicas y académicos"
+                        style="padding: 0"
+                    >
+                        <li><button class="letter-filter active" type="button" data-letter="ALL">Todas/os</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="A">A</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="B">B</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="C">C</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="D">D</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="E">E</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="F">F</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="G">G</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="H">H</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="I">I</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="J">J</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="K">K</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="L">L</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="M">M</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="N">N</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="O">O</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="P">P</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="Q">Q</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="R">R</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="S">S</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="T">T</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="U">U</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="V">V</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="W">W</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="X">X</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="Y">Y</button></li>
+                        <li><button class="letter-filter" type="button" data-letter="Z">Z</button></li>
+                    </ul>
+
+                    <p id="academicosContador" class="p-size--sm" style="color: #707070; margin-bottom: 16px"></p>
+
+                    <div class="row" id="listaAcademicos">
+                        <!-- A -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/34770-2/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-19-scaled.png"
+                                    alt="Yazmin Jiménez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Yazmin Jiménez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/alan-fox-igualt/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-15.png"
+                                    alt="Alan Fox Igualt"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Alan Fox Igualt</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/alfaro-elena/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/01/Elena_Alfaro.png"
+                                    alt="Elena Alfaro"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Elena Alfaro</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/allard-jose-manuel/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/allard_jose.jpg"
+                                    alt="José Manuel Allard"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">José Manuel Allard</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/alvarez-pedro/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/alvarez-pedro.jpg"
+                                    alt="Pedro Álvarez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Pedro Álvarez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/amenabar-alejandra/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/03/4.png"
+                                    alt="Alejandra Amenábar"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Alejandra Amenábar</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/andueza-luis-jose/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/andueza_luis.jpg"
+                                    alt="Luis José Andueza"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Luis José Andueza</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/antonia-pina/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/03/perfil-1.jpg"
+                                    alt="Antonia Piña"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Antonia Piña</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/avendano-cristobal/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/04/cristobal-avedano-zanartu.jpg"
+                                    alt="Cristóbal Avendaño"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Cristóbal Avendaño</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- B -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/bernasconi-renato/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/05/FOTO-RB-e1663712946967.jpg"
+                                    alt="Renato Bernasconi"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Renato Bernasconi</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/bravo-lizbeth/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/08/Lizbeth-Bravo-scaled-e1691439976995.jpg"
+                                    alt="Lizbeth Bravo"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Lizbeth Bravo</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/burgos-trinidad/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/03/Trinidad-Burgos.png"
+                                    alt="Trinidad Burgos"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Trinidad Burgos</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- C -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/campos-patricia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/Retrato-Patricia-Campos.png"
+                                    alt="Patricia Campos"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Patricia Campos</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/carles-julie/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/03/Julie-Carles.png"
+                                    alt="Julie Carles"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Julie Carles</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/carmona-vicente/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/09/Captura-de-Pantalla-2024-09-23-a-las-10.17.57-e1727097575903.png"
+                                    alt="Vicente Carmona"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Vicente Carmona</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/caro-ivan/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/caro_ivan.jpg"
+                                    alt="Iván Caro"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Iván Caro</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/carrasco-javier/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/03/Javier-Carrasco.png"
+                                    alt="Javier Carrasco"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Javier Carrasco</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/chilet-marcos/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/06/chilet_marcos.jpg"
+                                    alt="Marcos Chilet"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Marcos Chilet</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/contreras-maximiliano/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/05/Captura-de-Pantalla-2023-08-07-a-las-15.09.07-1.png"
+                                    alt="Maximiliano Contreras"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Maximiliano Contreras</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/cortez-felipe/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/faco-uc-2.jpg"
+                                    alt="Felipe Cortez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Felipe Cortez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/cox-paz/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Captura-de-Pantalla-2024-12-17-a-las-13.01.18-e1734451341438.png"
+                                    alt="Paz Cox"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Paz Cox</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/cristi-nicole/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/01/Nicole-Cristi-Perfil-.jpg"
+                                    alt="Nicole Cristi"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Nicole Cristi</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- D -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/diego-valdivieso-benavente/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-17.png"
+                                    alt="Diego Valdivieso Benavente"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Diego Valdivieso Benavente</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/du-pontavice-carlota/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/carlota_dupontavice.png"
+                                    alt="Carlota du Pontavice"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Carlota du Pontavice</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/duran-alejandro/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/duran_alejandro.jpg"
+                                    alt="Alejandro Durán"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Alejandro Durán</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- F -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/farias-gabriela/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2017/06/gabriela_farias.png"
+                                    alt="Gabriela Farías"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Gabriela Farías</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/figueroa-bernardita/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/WhatsApp-Image-2021-06-03-at-18.24.53-e1623183688616.jpeg"
+                                    alt="Bernardita Figueroa"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Bernardita Figueroa</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- G -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/galvez-francisco/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/galvez_francisco.jpg"
+                                    alt="Francisco Gálvez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Francisco Gálvez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/garreton-manuela/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/garreton_manuela.jpg"
+                                    alt="Manuela Garretón"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Manuela Garretón</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/gonzalez-gracia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/gracia_gonzalez.png"
+                                    alt="Gracia González"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Gracia González</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/graham-justine/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/justine_graham.png"
+                                    alt="Justine Graham"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Justine Graham</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/guerra-jose/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/12/Diseño-sin-título-7.png"
+                                    alt="José Guerra"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">José Guerra</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- H -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/hermansen-pablo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/hermansen_pablo.jpg"
+                                    alt="Pablo Hermansen"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Pablo Hermansen</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/hinojosa-alvaro/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/Diseno-sin-titulo-40.png"
+                                    alt="Álvaro Hinojosa"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Álvaro Hinojosa</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/hoces-de-la-guardia-soledad/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/hocesdelaguardia_soledad.jpg"
+                                    alt="Soledad Hoces De La Guardia"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Soledad Hoces De La Guardia</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- J -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/jelvez-paulina/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/jelvez_paulina.jpg"
+                                    alt="Paulina Jélvez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Paulina Jélvez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/juan-antonio-santis/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-16.png"
+                                    alt="Juan Antonio Santis"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Juan Antonio Santis</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- L -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/larrain-magdalena/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/08/M.Larrain01-scaled-e1691433216791.jpg"
+                                    alt="Magdalena Larraín"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Magdalena Larraín</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/leonard-douglas/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2017/06/IMG_7560-scaled.jpg"
+                                    alt="Douglas Leonard"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Douglas Leonard</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- M -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/manriquez-magdalena/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/08/Magdalena_Manriquez.jpeg"
+                                    alt="Magdalena Manríquez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Magdalena Manríquez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/merino-leonel/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/03/leonel-merino-1.jpg"
+                                    alt="Leonel Merino"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Leonel Merino</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/molina-pilar/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/pilar_molina.png"
+                                    alt="Pilar Molina"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Pilar Molina</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/mollenhauer-katherine/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/07/image-1.png"
+                                    alt="Katherine Mollenhauer"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Katherine Mollenhauer</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/monroy-federico/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/monroi_federico.jpg"
+                                    alt="Federico Monroy"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Federico Monroy</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/montt-denise/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/montt_denise.jpg"
+                                    alt="Denise Montt"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Denise Montt</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/mora-gerardo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/mora_gerardo.jpg"
+                                    alt="Gerardo Mora"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Gerardo Mora</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/mora-marcela/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/MarceMora-1.png"
+                                    alt="Marcela Mora"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Marcela Mora</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/moraga-eduardo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Edgardo-Moraga-1.png"
+                                    alt="Edgardo Moraga"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Edgardo Moraga</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/morales-gonzalo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/07/morales_gonzalo-e1626902870825.jpg"
+                                    alt="Gonzalo Morales"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Gonzalo Morales</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/morales-nicolas/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Nicolas-Morales-1.png"
+                                    alt="Nicolás Morales"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Nicolás Morales</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/moreno-paola/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2017/06/IMG_7594-scaled.jpg"
+                                    alt="Paola Moreno"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Paola Moreno</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/munoz-ximena/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/01/image-1.png"
+                                    alt="Ximena Muñoz"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Ximena Muñoz</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- N -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/novoa-hector/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2023/08/Foto-Héctor-Novoa-e1691500346285.jpg"
+                                    alt="Héctor Novoa"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Héctor Novoa</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- O -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/oviedo-natalia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/03/natalia-oviedo.jpg"
+                                    alt="Natalia Oviedo"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Natalia Oviedo</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- P -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/palmarola-hugo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Captura-de-Pantalla-2024-04-16-a-las-11.04.38.png"
+                                    alt="Hugo Palmarola"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Hugo Palmarola</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/parada-marcela/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/parada_marcela.jpg"
+                                    alt="Marcela Parada"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Marcela Parada</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/pozo-patricio/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/pozo_patricio.jpg"
+                                    alt="Patricio Pozo"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Patricio Pozo</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- R -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/ramirez-rodrigo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2017/06/IMG_7575-scaled.jpg"
+                                    alt="Rodrigo Ramírez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Rodrigo Ramírez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/rebolledo-francisco/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2025/01/Captura-de-Pantalla-2025-01-22-a-las-16.13.05.png"
+                                    alt="Francisco Rebolledo"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Francisco Rebolledo</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/rico-mercedes/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/rico_mercedes.jpg"
+                                    alt="Mercedes Rico"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Mercedes Rico</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/rios-camila/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/05/rIos_camila.jpg"
+                                    alt="Camila Ríos Erazo"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Camila Ríos Erazo</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/robles-juan-francisco/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/05/robles.jpg"
+                                    alt="Juan Francisco Robles"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Juan Francisco Robles</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/rodrigo-vera/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2026/06/image-3.png"
+                                    alt="Rodrigo Vera"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Rodrigo Vera</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/rodriguez-sebastian/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/05/rodriguez_sebastian.jpg"
+                                    alt="Sebastián Rodríguez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Sebastián Rodríguez</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- S -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/sanchez-patricia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/05/patricia-sanchez.jpg"
+                                    alt="Patricia Sánchez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Patricia Sánchez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/sandoval-gabriela/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/Diseno-sin-titulo-41.png"
+                                    alt="Gabriela Sandoval"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Gabriela Sandoval</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/sergio-ramirez-2/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/02/Captura-de-Pantalla-2025-01-22-a-las-16.26.20-e1737574684885.png"
+                                    alt="Sergio Ramírez"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Sergio Ramírez</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/silva-zinnia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/Zinnia-Silva-1.png"
+                                    alt="Zinnia Silva"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Zinnia Silva</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/simian-maria-jose/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/05/majose_simian.png"
+                                    alt="María José Simian"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">María José Simian</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- T -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/tironi-martin/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/WhatsApp-Image-2023-05-24-at-09.30.00-e1684935349724.jpeg"
+                                    alt="Martín Tironi"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Martín Tironi</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/toro-florencia/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2021/05/toro-florencia.jpg"
+                                    alt="Florencia Toro"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Florencia Toro</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- U -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/ubilla-mario/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/ubilla_mario.jpg"
+                                    alt="Mario Ubilla"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Mario Ubilla</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/ulibarri-ximena/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2014/11/ximena_ulibarri.png"
+                                    alt="Ximena Ulibarri"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Ximena Ulibarri</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- V -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/vaccaro-javiera/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/javiera_vaccaro.png"
+                                    alt="Javiera Vaccaro"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Javiera Vaccaro</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/vega-ricardo/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/vega_ricardo.jpg"
+                                    alt="Ricardo Vega"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Ricardo Vega</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/villamandos-antonio/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/Diseno-sin-titulo-42.png"
+                                    alt="Antonio Villamandos"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Antonio Villamandos</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/villela-andres/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2016/11/villela_andres.jpg"
+                                    alt="Andrés Villela"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Andrés Villela</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/vio-olga/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/olga-f.-vio.png"
+                                    alt="Olga F. Vio"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Olga F. Vio</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/vivanco-tomas/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2019/06/vivanco_tomas.jpg"
+                                    alt="Tomás Vivanco"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Tomás Vivanco</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- W -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/weil-anais/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2024/03/anais-11-scaled-e1734450328723.jpg"
+                                    alt="Anaís Weil"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Anaís Weil</p>
+                                </div></a
+                            >
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/wuth-paula/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2016/11/wuth-paula.jpg"
+                                    alt="Paula Wuth"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Paula Wuth</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- Z -->
+                        <div class="col-6 col-md-4 col-lg-3 mb-24">
+                            <a
+                                href="https://diseno.uc.cl/persona/zurob-carola/"
+                                class="uc-card dno-person-card card-type--link"
+                                style="text-decoration: none"
+                                ><img
+                                    class="dno-person-photo"
+                                    src="https://diseno.uc.cl/wp-content/uploads/2015/05/Retrato-Carola-Zurob-488x488-1.png"
+                                    alt="Carola Zurob"
+                                />
+                                <div class="uc-card_body--sm">
+                                    <p class="dno-person-name text-weight--bold">Carola Zurob</p>
+                                </div></a
+                            >
+                        </div>
+                    </div>
+
+                    <p
+                        id="academicosSinResultados"
+                        class="p-size--lg text-center"
+                        style="display: none; color: #707070; padding: 32px 0"
+                    >
+                        No encontramos académicas/os cuyo apellido comience con esa letra.
+                    </p>
+
+                    <!-- PAGINACIÓN -->
+                    <nav
+                        aria-label="Paginación de académicas y académicos"
+                        id="academicosPaginacion"
+                        style="margin-top: 8px"
+                    >
+                        <ul class="uc-pagination_pages" style="display: flex; justify-content: center">
+                            <li class="page-item active"><button class="page-link">1</button></li>
+                            <li class="page-item"><button class="page-link">2</button></li>
+                            <li class="page-item"><button class="page-link">3</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </nav>
-  </header>
 
+          <footer class="uc-footer">
+            <div class="container pb-80">
+                <div class="row" data-accordion>
+                    <div class="col-md-4">
+                        <div class="mb-40">
+                            <a href="/">
+                                <img
+                                    src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/logo-uc-blanco.svg"
+                                    alt="Pontificia Universidad Católica de Chile"
+                                    style="max-width: 240px"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <p class="uc-subtitle subtitle-extended color-white mt-32">ESCUELA DE DISEÑO</p>
 
-<div class="container">
-  <!-- TITULO Y BREADCRUMB -->
-  <div style="padding:32px 0 8px;">
-    <nav aria-label="breadcrumb">
-      <ol class="uc-breadcrumb">
-        <li class="uc-breadcrumb_item"><a href="https://diseno.uc.cl">Inicio</a><span class="uc-icon icon-size--sm">chevron_right</span></li>
-        <li class="uc-breadcrumb_item"><a href="https://diseno.uc.cl">Escuela</a><span class="uc-icon icon-size--sm">chevron_right</span></li>
-        <li class="uc-breadcrumb_item current">Personas</li>
-      </ol>
-    </nav>
-    <h1 style="margin-top:16px;">Personas</h1>
-    <p class="p-size--lg" style="max-width:760px;color:#707070;">Conoce al equipo de directivas, administrativas y académicas que forman la comunidad de la Escuela de Diseño UC.</p>
-  </div>
+                            <ul class="uc-footer_social">
+                                <!-- agregar enlaces a redes sociales correspondientes -->
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-twitter.svg"
+                                            alt="Twitter"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-facebook.svg"
+                                            alt="Facebook"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-instagram.svg"
+                                            alt="Instagram"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-linkedin.svg"
+                                            alt="Linkedin"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-youtube.svg"
+                                            alt="Youtube"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-flickr.svg"
+                                            alt="Flickr"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uc-footer_list-title footer-collapse-title" data-collapse="footerNavExample01">
+                            CONTACTO
+                        </div>
+                        <ul class="uc-footer_list footer-collapse" data-toggle="footerNavExample01">
+                            <li>Fono: +56 2 23545534</li>
+                            <li>El Comendador 1916, Providencia - Chile</li>
+                            <li>
+                                <a href="#"
+                                    ><a
+                                        href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/@-33.4202518,-70.6202817,17z/data=!4m13!1m7!3m6!1s0x9662cf608d0f317b:0x844e3a8482d4800c!2sEl+Comendador+1916,+Providencia,+Regi%C3%B3n+Metropolitana!3b1!8m2!3d-33.4202518!4d-70.618093!3m4!1s0x0:0x179482715007d19f!8m2!3d-33.4196244!4d-70.618585"
+                                        >¿Cómo llegar?</a
+                                    ></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uc-footer_list-title footer-collapse-title" data-collapse="footerNavExample02">
+                            ETC.
+                        </div>
+                        <ul class="uc-footer_list footer-collapse" data-toggle="footerNavExample02">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="uc-global-footer"></div>
+        </footer>
 
-  <div class="row" style="margin-top:16px;">
-    <!-- SIDEBAR -->
-    <aside class="col-12 col-lg-3" style="margin-bottom:32px;">
-      <p class="uc-footer_list-title" style="color:#000;margin-bottom:8px;">Escuela</p>
-      <ul class="uc-navbar-side">
-        <li><a href="https://diseno.uc.cl/escuela/quienesomos">Quiénes Somos</a></li>
-        <li><a href="https://diseno.uc.cl/escuela/historia">Historia</a></li>
-        <li><a href="https://diseno.uc.cl/escuela/infraestructura">Infraestructura</a></li>
-        <li><a href="https://diseno.uc.cl/escuela/personas" class="active">Personas</a></li>
-        <li><a href="https://diseno.uc.cl/escuela/postulaciones-a-pregrado">Postulaciones a Pregrado</a></li>
-        <li><a href="https://diseno.uc.cl/escuela/postulaciones-a-postgrado">Postulaciones a Postgrado</a></li>
-        <li><a href="https://diseno.uc.cl/escuela/postulaciones-a-educacion-continua">Educación Continua Diseño UC</a></li>
-      </ul>
+        <script>
+            (function () {
+                function quitarTildes(texto) {
+                    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                }
 
-      <p class="uc-footer_list-title" style="color:#000;margin:32px 0 12px;">Síguenos</p>
-      <ul class="uc-social-icons-container" style="justify-content:flex-start;">
-        <ul class="uc-social-icons" style="gap:0;">
-          <li><a href="https://www.instagram.com/disenouc/" aria-label="Instagram"><span class="uc-icon">photo_camera</span></a></li>
-          <li><a href="https://www.facebook.com/escueladisenouc" aria-label="Facebook"><span class="uc-icon">thumb_up</span></a></li>
-          <li><a href="https://www.linkedin.com/in/diseño-uc/" aria-label="LinkedIn"><span class="uc-icon">work</span></a></li>
-          <li><a href="https://twitter.com/diseno_uc" aria-label="Twitter"><span class="uc-icon">alternate_email</span></a></li>
-          <li><a href="https://www.youtube.com/channel/UCLKctg7Z2KAw61fHh1y1aXw" aria-label="YouTube"><span class="uc-icon">play_circle</span></a></li>
-        </ul>
-      </ul>
-    </aside>
+                function letraDeApellido(nombreCompleto) {
+                    var partes = nombreCompleto.trim().split(/\s+/);
+                    var apellido = partes[partes.length - 1] || "";
+                    var letra = quitarTildes(apellido).toUpperCase().charAt(0);
+                    return /[A-Z]/.test(letra) ? letra : "#";
+                }
 
-    <!-- CONTENIDO -->
-    <div class="col-12 col-lg-9">
+                document.addEventListener("DOMContentLoaded", function () {
+                    var grid = document.getElementById("listaAcademicos");
+                    var filtro = document.getElementById("filtroAlfabetico");
+                    var contador = document.getElementById("academicosContador");
+                    var sinResultados = document.getElementById("academicosSinResultados");
+                    var paginacion = document.getElementById("academicosPaginacion");
+                    if (!grid || !filtro) return;
 
-      <!-- DIRECTIVAS/OS -->
-      <div class="dno-section-heading">
-        <h2 class="h3" style="margin:0;">Directivas/os</h2>
-        <span class="uc-text-divider divider-secondary"></span>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/manns-patricia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/PManns-1.png" alt="Patricia Manns" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Patricia Manns</p><p class="dno-person-role">Directora</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/cardenas-lina/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/LinaCardenas-1.png" alt="Lina Cárdenas" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Lina Cárdenas</p><p class="dno-person-role">Subdirectora académica</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/julia-begona/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Begonajulia-1.png" alt="Begoña Julia" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Begoña Julia</p><p class="dno-person-role">Subdirectora de Investigación</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/gonzalez-alberto/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/AlbertoGonzalez-1.png" alt="Alberto González" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Alberto González</p><p class="dno-person-role">Subdirector de Transferencia</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/mora-marcela/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/MarceMora-1.png" alt="Marcela Mora" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Marcela Mora</p><p class="dno-person-role">Coordinación de comunicaciones. Docente adjunta.</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/moraga-eduardo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Edgardo-Moraga-1.png" alt="Edgardo Moraga" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Edgardo Moraga</p><p class="dno-person-role">Director MADA, Profesor Adjunto</p></div></a></div>
-      </div>
+                    var items = Array.prototype.slice.call(grid.children).filter(function (el) {
+                        return el.querySelector(".dno-person-name");
+                    });
 
-      <!-- ADMINISTRATIVAS/OS -->
-      <div class="dno-section-heading">
-        <h2 class="h3" style="margin:0;">Administrativas/os</h2>
-        <span class="uc-text-divider divider-secondary"></span>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/perez-mariana/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/MPerez-1.png" alt="Mariana Pérez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Mariana Pérez</p><p class="dno-person-role">Secretaria Dirección Diseño</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/salazar-carolina/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/CSalazar-1.png" alt="Carolina Salazar" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Carolina Salazar</p><p class="dno-person-role">Coordinadora Académica de la Escuela</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/vega-maria-antonieta/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/TonaVega-1.png" alt="Antonieta Vega" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Antonieta Vega</p><p class="dno-person-role">Asistente de Coordinación de Pregrado</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/claudia-saenz/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/ClauSaez-1.png" alt="Claudia Saez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Claudia Saez</p><p class="dno-person-role">Asistente Pregrado</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/maria-carolina-melo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/CMelo-1.png" alt="María Carolina Melo" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">María Carolina Melo</p><p class="dno-person-role">Coordinadora Académica MADA</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/marcela-mejias/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/MMejias-1.png" alt="Marcela Mejías" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Marcela Mejías</p><p class="dno-person-role">Asistente de coordinación Educación Continua</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/hoffmann-karem/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/KaremHoffman-1.png" alt="Karem Hoffmann" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Karem Hoffmann</p><p class="dno-person-role">Coordinadora Gestión Académica Educación Continua</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-2 mb-24"><a href="https://diseno.uc.cl/persona/rodriguez-pilar/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2022/04/PILI.png" alt="Pilar Rodríguez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Pilar Rodríguez</p><p class="dno-person-role">Encargada de Gestión de Procesos Académicos</p></div></a></div>
-      </div>
+                    var letrasDisponibles = {};
+                    items.forEach(function (item) {
+                        var nombre = item.querySelector(".dno-person-name").textContent;
+                        var letra = letraDeApellido(nombre);
+                        item.setAttribute("data-letra", letra);
+                        letrasDisponibles[letra] = (letrasDisponibles[letra] || 0) + 1;
+                    });
 
-      <!-- ACADÉMICAS/OS -->
-      <div class="dno-section-heading">
-        <h2 class="h3" style="margin:0;">Académicas/os</h2>
-        <span class="uc-text-divider divider-secondary"></span>
-      </div>
+                    var totalAcademicos = items.length;
 
-      <ul class="uc-filters_alphabetic dno-az-filter" id="filtroAlfabetico" role="navigation" aria-label="Filtro alfabético de académicas y académicos" style="padding:0;">
-        <li><button class="letter-filter active" type="button" data-letter="ALL">Todas/os</button></li>
-        <li><button class="letter-filter" type="button" data-letter="A">A</button></li>
-        <li><button class="letter-filter" type="button" data-letter="B">B</button></li>
-        <li><button class="letter-filter" type="button" data-letter="C">C</button></li>
-        <li><button class="letter-filter" type="button" data-letter="D">D</button></li>
-        <li><button class="letter-filter" type="button" data-letter="E">E</button></li>
-        <li><button class="letter-filter" type="button" data-letter="F">F</button></li>
-        <li><button class="letter-filter" type="button" data-letter="G">G</button></li>
-        <li><button class="letter-filter" type="button" data-letter="H">H</button></li>
-        <li><button class="letter-filter" type="button" data-letter="I">I</button></li>
-        <li><button class="letter-filter" type="button" data-letter="J">J</button></li>
-        <li><button class="letter-filter" type="button" data-letter="K">K</button></li>
-        <li><button class="letter-filter" type="button" data-letter="L">L</button></li>
-        <li><button class="letter-filter" type="button" data-letter="M">M</button></li>
-        <li><button class="letter-filter" type="button" data-letter="N">N</button></li>
-        <li><button class="letter-filter" type="button" data-letter="O">O</button></li>
-        <li><button class="letter-filter" type="button" data-letter="P">P</button></li>
-        <li><button class="letter-filter" type="button" data-letter="Q">Q</button></li>
-        <li><button class="letter-filter" type="button" data-letter="R">R</button></li>
-        <li><button class="letter-filter" type="button" data-letter="S">S</button></li>
-        <li><button class="letter-filter" type="button" data-letter="T">T</button></li>
-        <li><button class="letter-filter" type="button" data-letter="U">U</button></li>
-        <li><button class="letter-filter" type="button" data-letter="V">V</button></li>
-        <li><button class="letter-filter" type="button" data-letter="W">W</button></li>
-        <li><button class="letter-filter" type="button" data-letter="X">X</button></li>
-        <li><button class="letter-filter" type="button" data-letter="Y">Y</button></li>
-        <li><button class="letter-filter" type="button" data-letter="Z">Z</button></li>
-      </ul>
+                    var botones = Array.prototype.slice.call(filtro.querySelectorAll(".letter-filter"));
+                    botones.forEach(function (btn) {
+                        var letra = btn.getAttribute("data-letter");
+                        if (letra !== "ALL" && !letrasDisponibles[letra]) {
+                            btn.classList.add("disabled");
+                            btn.setAttribute("disabled", "disabled");
+                        }
+                    });
 
-      <p id="academicosContador" class="p-size--sm" style="color:#707070;margin-bottom:16px;"></p>
+                    function actualizarContador(letra, visibles) {
+                        if (!contador) return;
+                        if (letra === "ALL") {
+                            contador.textContent = totalAcademicos + " académicas y académicos en total.";
+                        } else {
+                            contador.textContent =
+                                visibles +
+                                (visibles === 1 ? " resultado" : " resultados") +
+                                ' para la letra "' +
+                                letra +
+                                '".';
+                        }
+                    }
 
-      <div class="row" id="listaAcademicos">
-        <!-- A -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/34770-2/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-19-scaled.png" alt="Yazmin Jiménez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Yazmin Jiménez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/alan-fox-igualt/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-15.png" alt="Alan Fox Igualt" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Alan Fox Igualt</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/alfaro-elena/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/01/Elena_Alfaro.png" alt="Elena Alfaro" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Elena Alfaro</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/allard-jose-manuel/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/allard_jose.jpg" alt="José Manuel Allard" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">José Manuel Allard</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/alvarez-pedro/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/alvarez-pedro.jpg" alt="Pedro Álvarez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Pedro Álvarez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/amenabar-alejandra/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/03/4.png" alt="Alejandra Amenábar" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Alejandra Amenábar</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/andueza-luis-jose/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/andueza_luis.jpg" alt="Luis José Andueza" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Luis José Andueza</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/antonia-pina/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/03/perfil-1.jpg" alt="Antonia Piña" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Antonia Piña</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/avendano-cristobal/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/04/cristobal-avedano-zanartu.jpg" alt="Cristóbal Avendaño" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Cristóbal Avendaño</p></div></a></div>
+                    function filtrarPor(letra) {
+                        var visibles = 0;
+                        items.forEach(function (item) {
+                            var coincide = letra === "ALL" || item.getAttribute("data-letra") === letra;
+                            item.style.display = coincide ? "" : "none";
+                            if (coincide) visibles++;
+                        });
 
-        <!-- B -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/bernasconi-renato/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/05/FOTO-RB-e1663712946967.jpg" alt="Renato Bernasconi" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Renato Bernasconi</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/bravo-lizbeth/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/08/Lizbeth-Bravo-scaled-e1691439976995.jpg" alt="Lizbeth Bravo" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Lizbeth Bravo</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/burgos-trinidad/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/03/Trinidad-Burgos.png" alt="Trinidad Burgos" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Trinidad Burgos</p></div></a></div>
+                        if (sinResultados) sinResultados.style.display = visibles === 0 ? "" : "none";
+                        if (paginacion) paginacion.style.display = letra === "ALL" ? "" : "none";
 
-        <!-- C -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/campos-patricia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/Retrato-Patricia-Campos.png" alt="Patricia Campos" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Patricia Campos</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/carles-julie/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/03/Julie-Carles.png" alt="Julie Carles" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Julie Carles</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/carmona-vicente/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/09/Captura-de-Pantalla-2024-09-23-a-las-10.17.57-e1727097575903.png" alt="Vicente Carmona" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Vicente Carmona</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/caro-ivan/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/caro_ivan.jpg" alt="Iván Caro" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Iván Caro</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/carrasco-javier/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/03/Javier-Carrasco.png" alt="Javier Carrasco" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Javier Carrasco</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/chilet-marcos/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/06/chilet_marcos.jpg" alt="Marcos Chilet" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Marcos Chilet</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/contreras-maximiliano/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/05/Captura-de-Pantalla-2023-08-07-a-las-15.09.07-1.png" alt="Maximiliano Contreras" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Maximiliano Contreras</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/cortez-felipe/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/faco-uc-2.jpg" alt="Felipe Cortez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Felipe Cortez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/cox-paz/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Captura-de-Pantalla-2024-12-17-a-las-13.01.18-e1734451341438.png" alt="Paz Cox" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Paz Cox</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/cristi-nicole/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/01/Nicole-Cristi-Perfil-.jpg" alt="Nicole Cristi" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Nicole Cristi</p></div></a></div>
+                        actualizarContador(letra, visibles);
 
-        <!-- D -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/diego-valdivieso-benavente/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-17.png" alt="Diego Valdivieso Benavente" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Diego Valdivieso Benavente</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/du-pontavice-carlota/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/carlota_dupontavice.png" alt="Carlota du Pontavice" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Carlota du Pontavice</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/duran-alejandro/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/duran_alejandro.jpg" alt="Alejandro Durán" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Alejandro Durán</p></div></a></div>
+                        botones.forEach(function (b) {
+                            b.classList.toggle("active", b.getAttribute("data-letter") === letra);
+                        });
+                    }
 
-        <!-- F -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/farias-gabriela/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2017/06/gabriela_farias.png" alt="Gabriela Farías Zurita" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Gabriela Farías Zurita</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/figueroa-bernardita/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/WhatsApp-Image-2021-06-03-at-18.24.53-e1623183688616.jpeg" alt="Bernardita Figueroa" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Bernardita Figueroa</p></div></a></div>
+                    filtro.addEventListener("click", function (e) {
+                        var btn = e.target.closest(".letter-filter");
+                        if (!btn || btn.hasAttribute("disabled")) return;
+                        filtrarPor(btn.getAttribute("data-letter"));
+                    });
 
-        <!-- G -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/galvez-francisco/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/galvez_francisco.jpg" alt="Francisco Gálvez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Francisco Gálvez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/garreton-manuela/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/garreton_manuela.jpg" alt="Manuela Garretón" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Manuela Garretón</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/gonzalez-gracia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/gracia_gonzalez.png" alt="Gracia González" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Gracia González</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/graham-justine/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/justine_graham.png" alt="Justine Graham" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Justine Graham</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/guerra-jose/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/12/Diseño-sin-título-7.png" alt="José Guerra" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">José Guerra</p></div></a></div>
-
-        <!-- H -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/hermansen-pablo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/hermansen_pablo.jpg" alt="Pablo Hermansen" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Pablo Hermansen</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/hinojosa-alvaro/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/Diseno-sin-titulo-40.png" alt="Álvaro Hinojosa" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Álvaro Hinojosa</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/hoces-de-la-guardia-soledad/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/hocesdelaguardia_soledad.jpg" alt="Soledad Hoces De La Guardia" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Soledad Hoces De La Guardia</p></div></a></div>
-
-        <!-- J -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/jelvez-paulina/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/jelvez_paulina.jpg" alt="Paulina Jélvez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Paulina Jélvez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/juan-antonio-santis/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/03/image-16.png" alt="Juan Antonio Santis" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Juan Antonio Santis</p></div></a></div>
-
-        <!-- L -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/larrain-magdalena/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/08/M.Larrain01-scaled-e1691433216791.jpg" alt="Magdalena Larraín" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Magdalena Larraín</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/leonard-douglas/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2017/06/IMG_7560-scaled.jpg" alt="Douglas Leonard" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Douglas Leonard</p></div></a></div>
-
-        <!-- M -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/manriquez-magdalena/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/08/Magdalena_Manriquez.jpeg" alt="Magdalena Manríquez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Magdalena Manríquez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/merino-leonel/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/03/leonel-merino-1.jpg" alt="Leonel Merino" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Leonel Merino</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/molina-pilar/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/pilar_molina.png" alt="Pilar Molina" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Pilar Molina</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/mollenhauer-katherine/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/07/image-1.png" alt="Katherine Mollenhauer" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Katherine Mollenhauer</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/monroy-federico/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/monroi_federico.jpg" alt="Federico Monroy" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Federico Monroy</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/montt-denise/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/montt_denise.jpg" alt="Denise Montt" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Denise Montt</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/mora-gerardo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/mora_gerardo.jpg" alt="Gerardo Mora" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Gerardo Mora</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/mora-marcela/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/MarceMora-1.png" alt="Marcela Mora" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Marcela Mora</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/moraga-eduardo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Edgardo-Moraga-1.png" alt="Edgardo Moraga" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Edgardo Moraga</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/morales-gonzalo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/07/morales_gonzalo-e1626902870825.jpg" alt="Gonzalo Morales" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Gonzalo Morales</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/morales-nicolas/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Nicolas-Morales-1.png" alt="Nicolás Morales" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Nicolás Morales</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/moreno-paola/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2017/06/IMG_7594-scaled.jpg" alt="Paola Moreno" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Paola Moreno</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/munoz-ximena/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/01/image-1.png" alt="Ximena Muñoz" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Ximena Muñoz</p></div></a></div>
-
-        <!-- N -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/novoa-hector/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2023/08/Foto-Héctor-Novoa-e1691500346285.jpg" alt="Héctor Novoa" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Héctor Novoa</p></div></a></div>
-
-        <!-- O -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/oviedo-natalia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/03/natalia-oviedo.jpg" alt="Natalia Oviedo" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Natalia Oviedo</p></div></a></div>
-
-        <!-- P -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/palmarola-hugo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Captura-de-Pantalla-2024-04-16-a-las-11.04.38.png" alt="Hugo Palmarola" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Hugo Palmarola</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/parada-marcela/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/parada_marcela.jpg" alt="Marcela Parada" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Marcela Parada</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/pozo-patricio/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/pozo_patricio.jpg" alt="Patricio Pozo" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Patricio Pozo</p></div></a></div>
-
-        <!-- R -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/ramirez-rodrigo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2017/06/IMG_7575-scaled.jpg" alt="Rodrigo Ramírez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Rodrigo Ramírez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/rebolledo-francisco/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2025/01/Captura-de-Pantalla-2025-01-22-a-las-16.13.05.png" alt="Francisco Rebolledo" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Francisco Rebolledo</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/rico-mercedes/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/rico_mercedes.jpg" alt="Mercedes Rico" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Mercedes Rico</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/rios-camila/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/05/rIos_camila.jpg" alt="Camila Ríos Erazo" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Camila Ríos Erazo</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/robles-juan-francisco/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/05/robles.jpg" alt="Juan Francisco Robles" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Juan Francisco Robles</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/rodrigo-vera/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2026/06/image-3.png" alt="Rodrigo Vera" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Rodrigo Vera</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/rodriguez-sebastian/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/05/rodriguez_sebastian.jpg" alt="Sebastián Rodríguez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Sebastián Rodríguez</p></div></a></div>
-
-        <!-- S -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/sanchez-patricia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/05/patricia-sanchez.jpg" alt="Patricia Sánchez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Patricia Sánchez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/sandoval-gabriela/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/Diseno-sin-titulo-41.png" alt="Gabriela Sandoval" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Gabriela Sandoval</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/sergio-ramirez-2/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/02/Captura-de-Pantalla-2025-01-22-a-las-16.26.20-e1737574684885.png" alt="Sergio Ramírez" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Sergio Ramírez</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/silva-zinnia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/Zinnia-Silva-1.png" alt="Zinnia Silva" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Zinnia Silva</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/simian-maria-jose/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/05/majose_simian.png" alt="María José Simian" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">María José Simian</p></div></a></div>
-
-        <!-- T -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/tironi-martin/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/WhatsApp-Image-2023-05-24-at-09.30.00-e1684935349724.jpeg" alt="Martín Tironi" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Martín Tironi</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/toro-florencia/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2021/05/toro-florencia.jpg" alt="Florencia Toro" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Florencia Toro</p></div></a></div>
-
-        <!-- U -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/ubilla-mario/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/ubilla_mario.jpg" alt="Mario Ubilla" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Mario Ubilla</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/ulibarri-ximena/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2014/11/ximena_ulibarri.png" alt="Ximena Ulibarri" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Ximena Ulibarri</p></div></a></div>
-
-        <!-- V -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/vaccaro-javiera/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/javiera_vaccaro.png" alt="Javiera Vaccaro" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Javiera Vaccaro</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/vega-ricardo/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/vega_ricardo.jpg" alt="Ricardo Vega" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Ricardo Vega</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/villamandos-antonio/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/Diseno-sin-titulo-42.png" alt="Antonio Villamandos" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Antonio Villamandos</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/villela-andres/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2016/11/villela_andres.jpg" alt="Andrés Villela" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Andrés Villela</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/vio-olga/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/olga-f.-vio.png" alt="Olga F. Vio" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Olga F. Vio</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/vivanco-tomas/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2019/06/vivanco_tomas.jpg" alt="Tomás Vivanco" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Tomás Vivanco</p></div></a></div>
-
-        <!-- W -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/weil-anais/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2024/03/anais-11-scaled-e1734450328723.jpg" alt="Anaís Weil" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Anaís Weil</p></div></a></div>
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/wuth-paula/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2016/11/wuth-paula.jpg" alt="Paula Wuth" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Paula Wuth</p></div></a></div>
-
-        <!-- Z -->
-        <div class="col-6 col-md-4 col-lg-3 mb-24"><a href="https://diseno.uc.cl/persona/zurob-carola/" class="uc-card dno-person-card card-type--link" style="text-decoration:none;"><img class="dno-person-photo" src="https://diseno.uc.cl/wp-content/uploads/2015/05/Retrato-Carola-Zurob-488x488-1.png" alt="Carola Zurob" /><div class="uc-card_body--sm"><p class="dno-person-name text-weight--bold">Carola Zurob</p></div></a></div>
-      </div>
-
-      <p id="academicosSinResultados" class="p-size--lg text-center" style="display:none;color:#707070;padding:32px 0;">
-        No encontramos académicas/os cuyo apellido comience con esa letra.
-      </p>
-
-      <!-- PAGINACIÓN -->
-      <nav aria-label="Paginación de académicas y académicos" id="academicosPaginacion" style="margin-top:8px;">
-        <ul class="uc-pagination_pages" style="display:flex;justify-content:center;">
-          <li class="page-item active"><button class="page-link">1</button></li>
-          <li class="page-item"><button class="page-link">2</button></li>
-          <li class="page-item"><button class="page-link">3</button></li>
-        </ul>
-      </nav>
-
-    </div>
-  </div>
-</div>
-
-<!-- ACREDITACIONES -->
-<section style="padding:32px 0;background:#f6f6f6;margin-top:48px;">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-center" style="gap:24px;flex-wrap:wrap;">
-      <img src="https://diseno.uc.cl/wp-content/themes/dno/img/ico-cumulus.png" alt="Cumulus" style="max-height:56px;" />
-      <p class="p-size--sm" style="max-width:340px;color:#707070;">International Association of Universities and Colleges of Art, Design and Media</p>
-      <img src="https://diseno.uc.cl/wp-content/themes/dno/img/ico-acredita.png" alt="CNA acreditación" style="max-height:56px;" />
-      <p class="p-size--sm" style="max-width:240px;color:#707070;">Carrera acreditada — 7 años / 2015-2022</p>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="uc-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-3 mb-24">
-        <img src="https://diseno.uc.cl/wp-content/themes/dno/img/escuela-de-diseno-uc.svg" alt="Escuela de Diseño UC" style="height:44px;filter:invert(1) brightness(2);" />
-        <p class="p-size--sm" style="margin-top:16px;color:#c6c6c6;">Pontificia Universidad Católica de Chile</p>
-      </div>
-
-      <div class="col-6 col-lg-3 mb-24">
-        <p class="uc-footer_list-title">Contacto</p>
-        <ul class="uc-footer_list">
-          <li>Fono: +56 2 23545534</li>
-          <li>El Comendador 1916, Providencia, Santiago de Chile</li>
-          <li><a href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/" class="link-inline">Ver mapa <span class="uc-icon icon-color--white icon-size--sm">location_on</span></a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-lg-3 mb-24">
-        <p class="uc-footer_list-title">Sitio</p>
-        <ul class="uc-footer_list">
-          <li><a href="https://diseno.uc.cl/escuela/historia">Historia</a></li>
-          <li><a href="https://diseno.uc.cl/escuela/personas">Personas</a></li>
-          <li><a href="https://diseno.uc.cl/comunicaciones/actualidad/noticias">Noticias</a></li>
-          <li><a href="https://diseno.uc.cl/comunicaciones/actualidad/ofertas-laborales/">Ofertas laborales</a></li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-lg-3 mb-24">
-        <p class="uc-footer_list-title">Síguenos</p>
-        <ul class="uc-footer_social">
-          <li><a href="https://www.instagram.com/disenouc/" aria-label="Instagram"><span class="uc-icon">photo_camera</span></a></li>
-          <li><a href="https://www.facebook.com/escueladisenouc" aria-label="Facebook"><span class="uc-icon">thumb_up</span></a></li>
-          <li><a href="https://www.linkedin.com/in/diseño-uc/" aria-label="LinkedIn"><span class="uc-icon">work</span></a></li>
-          <li><a href="https://twitter.com/diseno_uc" aria-label="Twitter"><span class="uc-icon">alternate_email</span></a></li>
-          <li><a href="https://www.youtube.com/channel/UCLKctg7Z2KAw61fHh1y1aXw" aria-label="YouTube"><span class="uc-icon">play_circle</span></a></li>
-        </ul>
-      </div>
-    </div>
-
-    <hr style="border-color:#173f8a;margin:24px 0;" />
-
-    <p class="p-size--sm" style="color:#c6c6c6;padding-bottom:24px;">
-      Los contenidos de este sitio web son publicados bajo una
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional</a>.
-      <a href="https://diseno.uc.cl/">ESP</a> | <a href="https://diseno.uc.cl/english">ENG</a>
-    </p>
-  </div>
-</footer>
-
-<script>
-(function () {
-  function quitarTildes(texto) {
-    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
-
-  function letraDeApellido(nombreCompleto) {
-    var partes = nombreCompleto.trim().split(/\s+/);
-    var apellido = partes[partes.length - 1] || '';
-    var letra = quitarTildes(apellido).toUpperCase().charAt(0);
-    return /[A-Z]/.test(letra) ? letra : '#';
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var grid = document.getElementById('listaAcademicos');
-    var filtro = document.getElementById('filtroAlfabetico');
-    var contador = document.getElementById('academicosContador');
-    var sinResultados = document.getElementById('academicosSinResultados');
-    var paginacion = document.getElementById('academicosPaginacion');
-    if (!grid || !filtro) return;
-
-    var items = Array.prototype.slice.call(grid.children).filter(function (el) {
-      return el.querySelector('.dno-person-name');
-    });
-
-    var letrasDisponibles = {};
-    items.forEach(function (item) {
-      var nombre = item.querySelector('.dno-person-name').textContent;
-      var letra = letraDeApellido(nombre);
-      item.setAttribute('data-letra', letra);
-      letrasDisponibles[letra] = (letrasDisponibles[letra] || 0) + 1;
-    });
-
-    var totalAcademicos = items.length;
-
-    var botones = Array.prototype.slice.call(filtro.querySelectorAll('.letter-filter'));
-    botones.forEach(function (btn) {
-      var letra = btn.getAttribute('data-letter');
-      if (letra !== 'ALL' && !letrasDisponibles[letra]) {
-        btn.classList.add('disabled');
-        btn.setAttribute('disabled', 'disabled');
-      }
-    });
-
-    function actualizarContador(letra, visibles) {
-      if (!contador) return;
-      if (letra === 'ALL') {
-        contador.textContent = totalAcademicos + ' académicas y académicos en total.';
-      } else {
-        contador.textContent = visibles + (visibles === 1 ? ' resultado' : ' resultados') + ' para la letra "' + letra + '".';
-      }
-    }
-
-    function filtrarPor(letra) {
-      var visibles = 0;
-      items.forEach(function (item) {
-        var coincide = letra === 'ALL' || item.getAttribute('data-letra') === letra;
-        item.style.display = coincide ? '' : 'none';
-        if (coincide) visibles++;
-      });
-
-      if (sinResultados) sinResultados.style.display = visibles === 0 ? '' : 'none';
-      if (paginacion) paginacion.style.display = letra === 'ALL' ? '' : 'none';
-
-      actualizarContador(letra, visibles);
-
-      botones.forEach(function (b) {
-        b.classList.toggle('active', b.getAttribute('data-letter') === letra);
-      });
-    }
-
-    filtro.addEventListener('click', function (e) {
-      var btn = e.target.closest('.letter-filter');
-      if (!btn || btn.hasAttribute('disabled')) return;
-      filtrarPor(btn.getAttribute('data-letter'));
-    });
-
-    filtrarPor('ALL');
-  });
-})();
-</script>
-
-</body>
+                    filtrarPor("ALL");
+                });
+            })();
+        </script>
+    </body>
 </html>

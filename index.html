@@ -1,657 +1,821 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="referrer" content="no-referrer" />
-<title>Diseño UC | Escuela de Diseño de la Pontificia Universidad Católica de Chile</title>
-<meta name="description" content="Una Escuela que ofrece al país profesionales que lideran la introducción masiva del Diseño en el tejido productivo e institucional, aportando con ello al desarrollo local en un contexto global." />
-<link rel="stylesheet" href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css" />
-<style>
-  /* Ajustes mínimos específicos de esta home, todo lo demás usa uc-kitdigital.css */
-  body{background:#fff;}
-  .dno-logo-word{font-family:"Roboto Slab",serif;font-weight:700;font-size:1.35rem;color:#173f8a;line-height:1;}
-  .dno-logo-word span{color:#0176de;}
-  .dno-hero-eyebrow{letter-spacing:2px;}
-  .dno-scroll-x{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;}
-  .dno-scroll-x::-webkit-scrollbar{height:6px;}
-  .dno-scroll-x::-webkit-scrollbar-thumb{background:#c6c6c6;border-radius:4px;}
-  .dno-scroll-x > *{scroll-snap-align:start;flex:0 0 auto;}
-  .dno-news-thumb{width:100%;height:210px;object-fit:cover;display:block;}
-  .dno-avisos-thumb{width:100%;height:150px;object-fit:cover;display:block;}
-  .dno-section-title{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:24px;}
-  .dno-badge-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
-  .dno-badge-row img{max-height:56px;width:auto;}
-  .dno-footer-badges p{font-size:.8rem;line-height:1.4;color:#c6c6c6;margin:0;}
-  .uc-hero{max-height:50vh !important; height:auto}
-</style>
-</head>
-<body>
-
-  <header class="uc-header">
-    <div id="uc-global-topbar"></div>
-    <nav class="uc-navbar">
-      <!-- Menú para versión Escritorio -->
-      <div class="container d-none d-lg-block">
-        <div class="row align-items-center">
-          <div class="col-lg-3 col-xl-2">
-            <img src="https://kit-digital-uc-desa.s3.amazonaws.com/img/logo-uc-azul.svg" alt="Pontificia Universidad Católica de Chile" class="img-fluid">
-          </div>
-          <div class="col-lg-8 col-xl-9 pl-60">
-            <div class="h2 text-font--serif text-color--blue mt-24">Diseño UC</div>
-          </div>
-        </div>
-        <ul class="uc-navbar_nav" style="position: relative; z-index: 99;">
-          <li class="nav-item ">
-            <a href="index.html" class="uc-btn btn-inline">Inicio </a>
-          </li>
-          <li class="nav-item ">
-            <a href="historia.html" class="uc-btn btn-inline">Historia </a>
-          </li>
-          <li class="nav-item ">
-            <a href="personas.html" class="uc-btn btn-inline">Personas </a>
-          </li>
-          <li class="nav-item ">
-            <a href="diplomados.html" class="uc-btn btn-inline">Diplomados </a>
-          </li>
-          <li class="nav-item uc-navbar-dropdown">
-            <a href="/programas-de-estudio/" class="uc-btn btn-inline">Paginas <i class="uc-icon">arrow_drop_down</i> </a>
-            <ul class="uc-navbar-dropdown_menu">
-              <li class="dropdown_item--heading">
-                <a href="#" class="uc-btn">Página padre</a>
-                <ul class="uc-navbar-dropdown_child">
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 1</a>
-                  </li>
-
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 2</a>
-                  </li>
-
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 3</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 4</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 5</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 6</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown_item--heading">
-                <a href="#" class="uc-btn">Página padre 2</a>
-                <ul class="uc-navbar-dropdown_child">
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 7</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 8</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 9</a>
-                  </li>
-                  <li class="uc-navbar-dropdown_item">
-                    <a href="#" class="uc-btn">Pagina 10</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!-- Menú para versión Móvil -->
-      <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
-        <div class="uc-navbar_mobile-bar navbar-brand">
-          <div class="uc-navbar_mobile-logo navbar-light">
-            <div class="h2 text-font--serif text-color--blue">Diseño UC</div>
-          </div>
-          <a href="javascript:void(0);" class="uc-navbar_mobile-button">
-            <span class="uc-icon"></span>
-          </a>
-        </div>
-        <div class="uc-navbar_mobile-content">
-          <ul class="uc-navbar_mobile-list">
-            <li class="list-item has-list-children">
-              <a class="list-open" href="#">
-                Pregrado
-                <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-              </a>
-              <ul class="list-item list-children">
-                <li class="list-item">
-                  <a href="#" class="list-close">
-                    <div class="uc-icon icon-size--sm">
-                      arrow_back_ios
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="referrer" content="no-referrer" />
+        <title>Diseño UC | Escuela de Diseño de la Pontificia Universidad Católica de Chile</title>
+        <meta
+            name="description"
+            content="Una Escuela que ofrece al país profesionales que lideran la introducción masiva del Diseño en el tejido productivo e institucional, aportando con ello al desarrollo local en un contexto global."
+        />
+        <link
+            rel="stylesheet"
+            href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css"
+        />
+        <style>
+            /* Ajustes mínimos específicos de esta home, todo lo demás usa uc-kitdigital.css */
+            body {
+                background: #fff;
+            }
+            .dno-logo-word {
+                font-family: "Roboto Slab", serif;
+                font-weight: 700;
+                font-size: 1.35rem;
+                color: #173f8a;
+                line-height: 1;
+            }
+            .dno-logo-word span {
+                color: #0176de;
+            }
+            .dno-hero-eyebrow {
+                letter-spacing: 2px;
+            }
+            .dno-scroll-x {
+                display: flex;
+                gap: 16px;
+                overflow-x: auto;
+                padding-bottom: 8px;
+                scroll-snap-type: x mandatory;
+            }
+            .dno-scroll-x::-webkit-scrollbar {
+                height: 6px;
+            }
+            .dno-scroll-x::-webkit-scrollbar-thumb {
+                background: #c6c6c6;
+                border-radius: 4px;
+            }
+            .dno-scroll-x > * {
+                scroll-snap-align: start;
+                flex: 0 0 auto;
+            }
+            .dno-news-thumb {
+                width: 100%;
+                height: 210px;
+                object-fit: cover;
+                display: block;
+            }
+            .dno-avisos-thumb {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                display: block;
+            }
+            .dno-section-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 24px;
+            }
+            .dno-badge-row {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                flex-wrap: wrap;
+            }
+            .dno-badge-row img {
+                max-height: 56px;
+                width: auto;
+            }
+            .dno-footer-badges p {
+                font-size: 0.8rem;
+                line-height: 1.4;
+                color: #c6c6c6;
+                margin: 0;
+            }
+            .uc-hero {
+                max-height: 50vh !important;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="uc-header">
+            <div id="uc-global-topbar"></div>
+            <nav class="uc-navbar">
+                <!-- Menú para versión Escritorio -->
+                <div class="container d-none d-lg-block">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-xl-2">
+                            <img
+                                src="https://kit-digital-uc-desa.s3.amazonaws.com/img/logo-uc-azul.svg"
+                                alt="Pontificia Universidad Católica de Chile"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="col-lg-8 col-xl-9 pl-60">
+                            <div class="h2 text-font--serif text-color--blue mt-24">Diseño UC</div>
+                        </div>
                     </div>
-                    Pregrado
-                  </a>
-                </li>
-                <!-- loop de elementos -->
-                <li class="list-item has-list-children">
-                  <a href="#" class="list-open">
-                    Item 1
-                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-                  </a>
-                  <ul class="list-children">
-                    <li class="list-item">
-                      <a href="#" class="list-close text-color--gray">
-                        <span class="uc-icon">arrow_back_ios</span>
-                        Item child
-                      </a>
-                    </li>
-                    <li class="list-item">
-                      <a href="/">Item child</a>
-                    </li>
-                    <li class="list-item">
-                      <a href="/">Item child</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="list-item">
-                  <a href="/">
-                    Item child
-                    <i class="uc-icon">launch</i>
-                  </a>
-                </li>
-                <li class="list-item">
-                  <a href="/">Item child</a>
-                </li>
-                <li class="list-item">
-                  <a href="/">Item child</a>
-                </li>
-              </ul>
-            </li>
-            <li class="list-item">
-              <a href="#">Item 2</a>
-            </li>
-            <li class="list-item has-list-children">
-              <a class="list-open" href="#">
-                Desplegable 2
-                <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-              </a>
-              <ul class="list-item list-children">
-                <li class="list-item">
-                  <a href="#" class="list-close">
-                    <div class="uc-icon icon-size--sm">
-                      arrow_back_ios
+                    <ul class="uc-navbar_nav" style="position: relative; z-index: 99">
+                        <li class="nav-item">
+                            <a href="index.html" class="uc-btn btn-inline">Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="historia.html" class="uc-btn btn-inline">Historia </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="personas.html" class="uc-btn btn-inline">Personas </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="uc-btn btn-inline">Diplomados </a>
+                        </li>
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="/programas-de-estudio/" class="uc-btn btn-inline"
+                                >Paginas <i class="uc-icon">arrow_drop_down</i>
+                            </a>
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Página padre</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 1</a>
+                                        </li>
+
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 2</a>
+                                        </li>
+
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 3</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 4</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 5</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 6</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Página padre 2</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 7</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 8</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 9</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Pagina 10</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menú para versión Móvil -->
+                <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
+                    <div class="uc-navbar_mobile-bar navbar-brand">
+                        <div class="uc-navbar_mobile-logo navbar-light">
+                            <div class="h2 text-font--serif text-color--blue">Diseño UC</div>
+                        </div>
+                        <a href="javascript:void(0);" class="uc-navbar_mobile-button">
+                            <span class="uc-icon"></span>
+                        </a>
                     </div>
-                    Desplegable 2
-                  </a>
-                </li>
-                <!-- loop de elementos -->
-                <li class="list-item">
-                  <a href="#">Item 1</a>
-                </li>
-                <li class="list-item">
-                  <a href="#">Item 2</a>
-                </li>
-                <li class="list-item">
-                  <a href="#">Item 3</a>
-                </li>
-              </ul>
-            </li>
-            <li class="list-item">
-              <a href="#">Item 4</a>
-            </li>
-            <li class="list-item">
-              <a href="#">Item 5</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-  </header>
+                    <div class="uc-navbar_mobile-content">
+                        <ul class="uc-navbar_mobile-list">
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#">
+                                    Pregrado
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                                </a>
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close">
+                                            <div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Pregrado
+                                        </a>
+                                    </li>
+                                    <!-- loop de elementos -->
+                                    <li class="list-item has-list-children">
+                                        <a href="#" class="list-open">
+                                            Item 1
+                                            <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                                        </a>
+                                        <ul class="list-children">
+                                            <li class="list-item">
+                                                <a href="#" class="list-close text-color--gray">
+                                                    <span class="uc-icon">arrow_back_ios</span>
+                                                    Item child
+                                                </a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="/">Item child</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="/">Item child</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="/">
+                                            Item child
+                                            <i class="uc-icon">launch</i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="/">Item child</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="/">Item child</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Item 2</a>
+                            </li>
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#">
+                                    Desplegable 2
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
+                                </a>
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close">
+                                            <div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Desplegable 2
+                                        </a>
+                                    </li>
+                                    <!-- loop de elementos -->
+                                    <li class="list-item">
+                                        <a href="#">Item 1</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Item 2</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Item 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Item 4</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Item 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-
-<!-- HERO -->
-<aside class="uc-hero" aria-label="Portada Escuela de Diseño UC">
-  <img
-    class="uc-hero__bg-img"
-    src="https://diseno.uc.cl/wp-content/uploads/2025/01/gifffff_banner.gif"
-    alt="Estudiantes y proyectos de la Escuela de Diseño UC" />
-  <div class="uc-hero__dark-gradient"></div>
-  <div class="container">
-    <div class="uc-hero__content uc-hero__content--bottom">
-      <div style="max-width:720px;padding-bottom:48px;">
-        <p class="uc-subtitle dno-hero-eyebrow" style="color:#fec60d; margin-top:30px">Escuela de Diseño UC</p>
-        <h1 class="color-white" style="margin-bottom:16px;">Diseño UC entre las mejores escuelas de diseño del mundo</h1>
-        <p class="p-size--lg color-white" style="margin-bottom:24px;">Una Escuela que forma profesionales que lideran la introducción masiva del Diseño en el tejido productivo e institucional, aportando al desarrollo local en un contexto global.</p>
-        <a href="https://diseno.uc.cl/2024/04/diseno-uc-dentro-de-las-mejores-escuelas-de-diseno-del-mundo/" class="uc-btn btn-secondary" style="width:fit-content;">
-          Conoce la noticia <span class="uc-icon icon-color--white">arrow_forward</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</aside>
-
-<!-- AVISO DESTACADO / PRÁCTICAS -->
-<section class="uc-border-bottom" style="padding:20px 0;background:#f6f6f6;">
-  <div class="container">
-    <a href="https://forms.office.com/r/BQQ4aTcf08" class="d-flex align-items-center justify-content-between" style="text-decoration:none;gap:16px;flex-wrap:wrap;">
-      <span class="d-flex align-items-center" style="gap:12px;">
-        <span class="uc-tag">Aviso</span>
-        <span class="text-weight--medium" style="color:#000;">Convocatoria abierta para Prácticas Profesionales — postula ahora</span>
-      </span>
-      <span class="uc-btn btn-inline btn-inline--bold">Ver formulario <span class="uc-icon">arrow_forward</span></span>
-    </a>
-  </div>
-</section>
-
-<!-- LANZAMIENTOS DESTACADOS -->
-<section style="padding:48px 0;">
-  <div class="container">
-    <div class="dno-section-title">
-      <div>
-        <p class="uc-subtitle" style="color:#0176de;">Agenda</p>
-        <h2 class="mb-0">Próximas actividades</h2>
-      </div>
-      <a href="https://diseno.uc.cl/comunicaciones/actualidad/agenda" class="uc-btn btn-inline btn-inline--bold">Ver todas <span class="uc-icon icon-shape--rounded">add</span></a>
-    </div>
-
-    <div class="row">
-
-
-      <div class="col-12 col-md-4 py-20">
-
-          <div
-            class="uc-card card-type--event card-height--same"
-            style="max-width: 380px"
-          >
+        <!-- HERO -->
+        <aside class="uc-hero" aria-label="Portada Escuela de Diseño UC">
             <img
-              src="https://dummyimage.com/378x210/e0e0e0/b8b8b8.jpg"
-              class="d-none d-lg-block img-fluid"
-              loading="lazy"
-              height="100"
-              width="100%"
+                class="uc-hero__bg-img"
+                src="https://diseno.uc.cl/wp-content/uploads/2025/01/gifffff_banner.gif"
+                alt="Estudiantes y proyectos de la Escuela de Diseño UC"
             />
-            <div class="uc-card_body">
-              <div class="uc-card card-type--date">
-                <div class="day">25</div>
-                <div class="month">ago</div>
-              </div>
-              <span class="uc-subtitle mt-20 mb-16">Teatro</span>
-              <div class="d-flex h-full flex-column">
-                <a
-                  href="#"
-                  target="_blank"
-                  class="d-flex h4 color-black uc-card-link mb-16"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
-                </a>
-              </div>
-              <div class="uc-card_event--content">
-                <div class="date">25 de Agosto, 2026</div>
-                <div class="time">15:00 a 20:30 hrs.</div>
-                <div class="venue"><p class="no-margin">Teatro UC</p></div>
-              </div>
+            <div class="uc-hero__dark-gradient"></div>
+            <div class="container">
+                <div class="uc-hero__content uc-hero__content--bottom">
+                    <div style="max-width: 720px; padding-bottom: 48px">
+                        <p class="uc-subtitle dno-hero-eyebrow" style="color: #fec60d; margin-top: 30px">
+                            Escuela de Diseño UC
+                        </p>
+                        <h1 class="color-white" style="margin-bottom: 16px">
+                            Diseño UC entre las mejores escuelas de diseño del mundo
+                        </h1>
+                        <p class="p-size--lg color-white" style="margin-bottom: 24px">
+                            Una Escuela que forma profesionales que lideran la introducción masiva del Diseño en el
+                            tejido productivo e institucional, aportando al desarrollo local en un contexto global.
+                        </p>
+                        <a
+                            href="https://diseno.uc.cl/2024/04/diseno-uc-dentro-de-las-mejores-escuelas-de-diseno-del-mundo/"
+                            class="uc-btn btn-secondary"
+                            style="width: fit-content"
+                        >
+                            Conoce la noticia <span class="uc-icon icon-color--white">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </aside>
 
-</div>
-
-
-      <div class="col-12 col-md-4 py-20">
-
-
-          <div
-            class="uc-card card-type--event card-height--same"
-            style="max-width: 380px"
-          >
-            <img
-              src="https://dummyimage.com/378x210/e0e0e0/b8b8b8.jpg"
-              class="d-none d-lg-block img-fluid"
-              loading="lazy"
-              height="100"
-              width="100%"
-            />
-            <div class="uc-card_body">
-              <div class="uc-card card-type--date">
-                <div class="day">25</div>
-                <div class="month">ago</div>
-              </div>
-              <span class="uc-subtitle mt-20 mb-16">Teatro</span>
-              <div class="d-flex h-full flex-column">
+        <!-- AVISO DESTACADO / PRÁCTICAS -->
+        <section class="uc-border-bottom" style="padding: 20px 0; background: #f6f6f6">
+            <div class="container">
                 <a
-                  href="#"
-                  target="_blank"
-                  class="d-flex h4 color-black uc-card-link mb-16"
+                    href="https://forms.office.com/r/BQQ4aTcf08"
+                    class="d-flex align-items-center justify-content-between"
+                    style="text-decoration: none; gap: 16px; flex-wrap: wrap"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
+                    <span class="d-flex align-items-center" style="gap: 12px">
+                        <span class="uc-tag">Aviso</span>
+                        <span class="text-weight--medium" style="color: #000"
+                            >Convocatoria abierta para Prácticas Profesionales — postula ahora</span
+                        >
+                    </span>
+                    <span class="uc-btn btn-inline btn-inline--bold"
+                        >Ver formulario <span class="uc-icon">arrow_forward</span></span
+                    >
                 </a>
-              </div>
-              <div class="uc-card_event--content">
-                <div class="date">25 de Agosto, 2026</div>
-                <div class="time">15:00 a 20:30 hrs.</div>
-                <div class="venue"><p class="no-margin">Teatro UC</p></div>
-              </div>
             </div>
-          </div>
+        </section>
 
-</div>
+        <!-- LANZAMIENTOS DESTACADOS -->
+        <section style="padding: 48px 0">
+            <div class="container">
+                <div class="dno-section-title">
+                    <div>
+                        <p class="uc-subtitle" style="color: #0176de">Agenda</p>
+                        <h2 class="mb-0">Próximas actividades</h2>
+                    </div>
+                    <a
+                        href="https://diseno.uc.cl/comunicaciones/actualidad/agenda"
+                        class="uc-btn btn-inline btn-inline--bold"
+                        >Ver todas <span class="uc-icon icon-shape--rounded">add</span></a
+                    >
+                </div>
 
+                <div class="row">
+                    <div class="col-12 col-md-4 py-20">
+                        <div class="uc-card card-type--event card-height--same" style="max-width: 380px">
+                            <img
+                                src="https://dummyimage.com/378x210/e0e0e0/b8b8b8.jpg"
+                                class="d-none d-lg-block img-fluid"
+                                loading="lazy"
+                                height="100"
+                                width="100%"
+                            />
+                            <div class="uc-card_body">
+                                <div class="uc-card card-type--date">
+                                    <div class="day">25</div>
+                                    <div class="month">ago</div>
+                                </div>
+                                <span class="uc-subtitle mt-20 mb-16">Teatro</span>
+                                <div class="d-flex h-full flex-column">
+                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
+                                    </a>
+                                </div>
+                                <div class="uc-card_event--content">
+                                    <div class="date">25 de Agosto, 2026</div>
+                                    <div class="time">15:00 a 20:30 hrs.</div>
+                                    <div class="venue"><p class="no-margin">Teatro UC</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="col-12 col-md-4 py-20">
+                    <div class="col-12 col-md-4 py-20">
+                        <div class="uc-card card-type--event card-height--same" style="max-width: 380px">
+                            <img
+                                src="https://dummyimage.com/378x210/e0e0e0/b8b8b8.jpg"
+                                class="d-none d-lg-block img-fluid"
+                                loading="lazy"
+                                height="100"
+                                width="100%"
+                            />
+                            <div class="uc-card_body">
+                                <div class="uc-card card-type--date">
+                                    <div class="day">25</div>
+                                    <div class="month">ago</div>
+                                </div>
+                                <span class="uc-subtitle mt-20 mb-16">Teatro</span>
+                                <div class="d-flex h-full flex-column">
+                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
+                                    </a>
+                                </div>
+                                <div class="uc-card_event--content">
+                                    <div class="date">25 de Agosto, 2026</div>
+                                    <div class="time">15:00 a 20:30 hrs.</div>
+                                    <div class="venue"><p class="no-margin">Teatro UC</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-          <div
-            class="uc-card card-type--event card-height--same"
-            style="max-width: 380px"
-          >
-            <img
-              src="https://dummyimage.com/378x210/e0e0e0/b8b8b8.jpg"
-              class="d-none d-lg-block img-fluid"
-              loading="lazy"
-              height="100"
-              width="100%"
-            />
-            <div class="uc-card_body">
-              <div class="uc-card card-type--date">
-                <div class="day">25</div>
-                <div class="month">ago</div>
-              </div>
-              <span class="uc-subtitle mt-20 mb-16">Teatro</span>
-              <div class="d-flex h-full flex-column">
-                <a
-                  href="#"
-                  target="_blank"
-                  class="d-flex h4 color-black uc-card-link mb-16"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
-                </a>
-              </div>
-              <div class="uc-card_event--content">
-                <div class="date">25 de Agosto, 2026</div>
-                <div class="time">15:00 a 20:30 hrs.</div>
-                <div class="venue"><p class="no-margin">Teatro UC</p></div>
-              </div>
+                    <div class="col-12 col-md-4 py-20">
+                        <div class="uc-card card-type--event card-height--same" style="max-width: 380px">
+                            <img
+                                src="https://dummyimage.com/378x210/e0e0e0/b8b8b8.jpg"
+                                class="d-none d-lg-block img-fluid"
+                                loading="lazy"
+                                height="100"
+                                width="100%"
+                            />
+                            <div class="uc-card_body">
+                                <div class="uc-card card-type--date">
+                                    <div class="day">25</div>
+                                    <div class="month">ago</div>
+                                </div>
+                                <span class="uc-subtitle mt-20 mb-16">Teatro</span>
+                                <div class="d-flex h-full flex-column">
+                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
+                                    </a>
+                                </div>
+                                <div class="uc-card_event--content">
+                                    <div class="date">25 de Agosto, 2026</div>
+                                    <div class="time">15:00 a 20:30 hrs.</div>
+                                    <div class="venue"><p class="no-margin">Teatro UC</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-</div>
-</div>
-</div>
-</section>
+        <!-- AVISOS / SITIOS DE INTERÉS -->
+        <section style="padding: 8px 0 48px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <a href="http://artesania.uc.cl/" class="uc-card card-type--link" style="text-decoration: none">
+                            <img
+                                class="dno-avisos-thumb"
+                                src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-artesania.png"
+                                alt="Artesanía UC"
+                            />
+                            <div class="uc-card_body--sm">
+                                <span class="uc-btn btn-inline"
+                                    >Artesanía UC <span class="uc-icon icon-size--sm">arrow_forward</span></span
+                                >
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a
+                            href="https://diseno.uc.cl/educacion-continua/diplomados/"
+                            class="uc-card card-type--link"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-avisos-thumb"
+                                src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-diplomados.png"
+                                alt="Diplomados"
+                            />
+                            <div class="uc-card_body--sm">
+                                <span class="uc-btn btn-inline"
+                                    >Diplomados <span class="uc-icon icon-size--sm">arrow_forward</span></span
+                                >
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a
+                            href="https://magisterdiseno.uc.cl/"
+                            class="uc-card card-type--link"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-avisos-thumb"
+                                src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-mada.png"
+                                alt="MADA UC"
+                            />
+                            <div class="uc-card_body--sm">
+                                <span class="uc-btn btn-inline"
+                                    >MADA UC <span class="uc-icon icon-size--sm">arrow_forward</span></span
+                                >
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a
+                            href="http://revistadisena.uc.cl"
+                            class="uc-card card-type--link"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-avisos-thumb"
+                                src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-revista-disena.jpg"
+                                alt="Revista Diseña"
+                            />
+                            <div class="uc-card_body--sm">
+                                <span class="uc-btn btn-inline"
+                                    >Revista Diseña <span class="uc-icon icon-size--sm">arrow_forward</span></span
+                                >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- NOTICIAS -->
+        <section style="padding: 16px 0 56px; background: #f6f6f6">
+            <div class="container">
+                <div class="dno-section-title">
+                    <div>
+                        <p class="uc-subtitle" style="color: #0176de">Comunicaciones</p>
+                        <h2>Noticias de nuestra Escuela</h2>
+                    </div>
+                    <a
+                        href="https://diseno.uc.cl/comunicaciones/actualidad/noticias"
+                        class="uc-btn btn-inline btn-inline--bold"
+                        >Ver todas las noticias <span class="uc-icon icon-shape--rounded">add</span></a
+                    >
+                </div>
 
-<!-- AVISOS / SITIOS DE INTERÉS -->
-<section style="padding:8px 0 48px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-3">
-        <a href="http://artesania.uc.cl/" class="uc-card card-type--link" style="text-decoration:none;">
-          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-artesania.png" alt="Artesanía UC" />
-          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">Artesanía UC <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="https://diseno.uc.cl/educacion-continua/diplomados/" class="uc-card card-type--link" style="text-decoration:none;">
-          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-diplomados.png" alt="Diplomados" />
-          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">Diplomados <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="https://magisterdiseno.uc.cl/" class="uc-card card-type--link" style="text-decoration:none;">
-          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-mada.png" alt="MADA UC" />
-          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">MADA UC <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="http://revistadisena.uc.cl" class="uc-card card-type--link" style="text-decoration:none;">
-          <img class="dno-avisos-thumb" src="https://diseno.uc.cl/wp-content/themes/dno/img/aviso-revista-disena.jpg" alt="Revista Diseña" />
-          <div class="uc-card_body--sm"><span class="uc-btn btn-inline">Revista Diseña <span class="uc-icon icon-size--sm">arrow_forward</span></span></div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-24">
+                        <a
+                            href="noticia.html"
+                            class="uc-card card-type--link card-height--same"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-news-thumb"
+                                src="https://diseno.uc.cl/wp-content/uploads/2026/08/FAB26-Workshop-1.jpeg"
+                                alt="Tomás Vivanco en el MIT"
+                            />
+                            <div class="uc-card_body">
+                                <p class="uc-subtitle" style="color: #707070">17-08-2026</p>
+                                <h3 class="h5">
+                                    Tomás Vivanco realizó diversas actividades en el MIT durante la Conferencia FAB26
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-24">
+                        <a
+                            href="noticia.html"
+                            class="uc-card card-type--link card-height--same"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-news-thumb"
+                                src="https://diseno.uc.cl/wp-content/uploads/2026/08/Hy-Technologies-MIT-Museum-edited.jpeg"
+                                alt="Hy-Technologies MIT Museum"
+                            />
+                            <div class="uc-card_body">
+                                <p class="uc-subtitle" style="color: #707070">17-08-2026</p>
+                                <h3 class="h5">Tomás Vivanco expuso en MIT Museum su proyecto «Hy-Technologies»</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-24">
+                        <a
+                            href="noticia.html"
+                            class="uc-card card-type--link card-height--same"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-news-thumb"
+                                src="https://diseno.uc.cl/wp-content/uploads/2026/08/Post-Vivir-la-calle-scaled.png"
+                                alt="Vivir en la calle"
+                            />
+                            <div class="uc-card_body">
+                                <p class="uc-subtitle" style="color: #707070">14-08-2026</p>
+                                <h3 class="h5">
+                                    Inauguración || Vivir en la calle: soluciones de diseño ante una emergencia
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-24">
+                        <a
+                            href="noticia.html"
+                            class="uc-card card-type--link card-height--same"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-news-thumb"
+                                src="https://diseno.uc.cl/wp-content/uploads/2026/08/image-2-scaled.png"
+                                alt="MADA UC y SAG"
+                            />
+                            <div class="uc-card_body">
+                                <p class="uc-subtitle" style="color: #707070">14-08-2026</p>
+                                <h3 class="h5">
+                                    MADA UC y SAG colaboran para mejorar la experiencia de viajar con mascotas al
+                                    extranjero
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-24">
+                        <a
+                            href="noticia.html"
+                            class="uc-card card-type--link card-height--same"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-news-thumb"
+                                src="https://diseno.uc.cl/wp-content/uploads/2026/08/Disena-Indexeada-1-scaled.png"
+                                alt="Revista Diseña indexada"
+                            />
+                            <div class="uc-card_body">
+                                <p class="uc-subtitle" style="color: #707070">14-08-2026</p>
+                                <h3 class="h5">
+                                    Revista Diseña se posiciona entre las publicaciones mejor evaluadas de su categoría
+                                    en Scopus
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-24">
+                        <a
+                            href="noticia.html"
+                            class="uc-card card-type--link card-height--same"
+                            style="text-decoration: none"
+                        >
+                            <img
+                                class="dno-news-thumb"
+                                src="https://diseno.uc.cl/wp-content/uploads/2026/08/Noticia-Dora-scaled.jpeg"
+                                alt="Dora Sánchez en Buenos Aires"
+                            />
+                            <div class="uc-card_body">
+                                <p class="uc-subtitle" style="color: #707070">13-08-2026</p>
+                                <h3 class="h5">
+                                    Dora Sánchez presenta "Las juntadas" en el Congreso de la Memory Studies Association
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-<!-- NOTICIAS -->
-<section style="padding:16px 0 56px;background:#f6f6f6;">
-  <div class="container">
-    <div class="dno-section-title">
-      <div>
-        <p class="uc-subtitle" style="color:#0176de;">Comunicaciones</p>
-        <h2>Noticias de nuestra Escuela</h2>
-      </div>
-      <a href="https://diseno.uc.cl/comunicaciones/actualidad/noticias" class="uc-btn btn-inline btn-inline--bold">Ver todas las noticias <span class="uc-icon icon-shape--rounded">add</span></a>
-    </div>
+                <div class="text-center" style="margin-top: 8px">
+                    <a
+                        href="https://diseno.uc.cl/comunicaciones/actualidad/noticias"
+                        class="uc-btn btn-primary"
+                        style="display: inline-flex"
+                        >VER ARCHIVO DE NOTICIAS <span class="uc-icon">arrow_forward</span></a
+                    >
+                </div>
+            </div>
+        </section>
 
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 mb-24">
-        <a href="noticia.html" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
-          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/FAB26-Workshop-1.jpeg" alt="Tomás Vivanco en el MIT" />
-          <div class="uc-card_body">
-            <p class="uc-subtitle" style="color:#707070;">17-08-2026</p>
-            <h3 class="h5">Tomás Vivanco realizó diversas actividades en el MIT durante la Conferencia FAB26</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-24">
-        <a href="noticia.html" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
-          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Hy-Technologies-MIT-Museum-edited.jpeg" alt="Hy-Technologies MIT Museum" />
-          <div class="uc-card_body">
-            <p class="uc-subtitle" style="color:#707070;">17-08-2026</p>
-            <h3 class="h5">Tomás Vivanco expuso en MIT Museum su proyecto «Hy-Technologies»</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-24">
-        <a href="noticia.html" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
-          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Post-Vivir-la-calle-scaled.png" alt="Vivir en la calle" />
-          <div class="uc-card_body">
-            <p class="uc-subtitle" style="color:#707070;">14-08-2026</p>
-            <h3 class="h5">Inauguración || Vivir en la calle: soluciones de diseño ante una emergencia</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-24">
-        <a href="noticia.html" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
-          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/image-2-scaled.png" alt="MADA UC y SAG" />
-          <div class="uc-card_body">
-            <p class="uc-subtitle" style="color:#707070;">14-08-2026</p>
-            <h3 class="h5">MADA UC y SAG colaboran para mejorar la experiencia de viajar con mascotas al extranjero</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-24">
-        <a href="noticia.html" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
-          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Disena-Indexeada-1-scaled.png" alt="Revista Diseña indexada" />
-          <div class="uc-card_body">
-            <p class="uc-subtitle" style="color:#707070;">14-08-2026</p>
-            <h3 class="h5">Revista Diseña se posiciona entre las publicaciones mejor evaluadas de su categoría en Scopus</h3>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-24">
-        <a href="noticia.html" class="uc-card card-type--link card-height--same" style="text-decoration:none;">
-          <img class="dno-news-thumb" src="https://diseno.uc.cl/wp-content/uploads/2026/08/Noticia-Dora-scaled.jpeg" alt="Dora Sánchez en Buenos Aires" />
-          <div class="uc-card_body">
-            <p class="uc-subtitle" style="color:#707070;">13-08-2026</p>
-            <h3 class="h5">Dora Sánchez presenta "Las juntadas" en el Congreso de la Memory Studies Association</h3>
-          </div>
-        </a>
-      </div>
-    </div>
+        <!-- PROGRAMAS ACADÉMICOS -->
+        <section style="padding: 56px 0">
+            <div class="container">
+                <div class="dno-section-title">
+                    <div>
+                        <p class="uc-subtitle" style="color: #0176de">Formación</p>
+                        <h2>Nuestros programas académicos</h2>
+                    </div>
+                </div>
 
-    <div class="text-center" style="margin-top:8px;">
-      <a href="https://diseno.uc.cl/comunicaciones/actualidad/noticias" class="uc-btn btn-primary" style="display:inline-flex;">VER ARCHIVO DE NOTICIAS <span class="uc-icon">arrow_forward</span></a>
-    </div>
-  </div>
-</section>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-24">
+                        <div class="uc-card card-height--same">
+                            <div class="uc-card_body">
+                                <h3 class="h4">Pregrado</h3>
+                                <p class="p-size--sm" style="color: #707070">
+                                    Formación integral en diseño, centrada en la interacción entre ser humano y entorno,
+                                    con foco en el desarrollo local en un contexto global.
+                                </p>
+                                <a
+                                    href="https://diseno.uc.cl/programas-academicos/pregrado/perfil-de-egreso"
+                                    class="uc-btn btn-inline btn-inline--bold"
+                                    style="margin-top: auto"
+                                    >Perfil de egreso <span class="uc-icon">arrow_forward</span></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-24">
+                        <div class="uc-card card-height--same">
+                            <div class="uc-card_body">
+                                <h3 class="h4">Postgrado — MADA UC</h3>
+                                <p class="p-size--sm" style="color: #707070">
+                                    Magíster en Diseño Avanzado orientado a la investigación y a la transferencia de
+                                    conocimiento en diseño.
+                                </p>
+                                <a
+                                    href="https://diseno.uc.cl/programas-academicos/postgrado/mada-uc"
+                                    class="uc-btn btn-inline btn-inline--bold"
+                                    style="margin-top: auto"
+                                    >Conoce el MADA UC <span class="uc-icon">arrow_forward</span></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-24">
+                        <div class="uc-card card-height--same">
+                            <div class="uc-card_body">
+                                <h3 class="h4">Educación Continua</h3>
+                                <p class="p-size--sm" style="color: #707070">
+                                    Diplomados y cursos para seguir formándote en diseño a lo largo de tu trayectoria
+                                    profesional.
+                                </p>
+                                <a
+                                    href="https://diseno.uc.cl/educacion-continua/diplomados"
+                                    class="uc-btn btn-inline btn-inline--bold"
+                                    style="margin-top: auto"
+                                    >Ver diplomados <span class="uc-icon">arrow_forward</span></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- PROGRAMAS ACADÉMICOS -->
-<section style="padding:56px 0;">
-  <div class="container">
-    <div class="dno-section-title">
-      <div>
-        <p class="uc-subtitle" style="color:#0176de;">Formación</p>
-        <h2>Nuestros programas académicos</h2>
-      </div>
-    </div>
+        <footer class="uc-footer">
+            <div class="container pb-80">
+                <div class="row" data-accordion>
+                    <div class="col-md-4">
+                        <div class="mb-40">
+                            <a href="/">
+                                <img
+                                    src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/logo-uc-blanco.svg"
+                                    alt="Pontificia Universidad Católica de Chile"
+                                    style="max-width: 240px"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <p class="uc-subtitle subtitle-extended color-white mt-32">ESCUELA DE DISEÑO</p>
 
-    <div class="row">
-      <div class="col-12 col-md-4 mb-24">
-        <div class="uc-card card-height--same">
-          <div class="uc-card_body">
-            <h3 class="h4">Pregrado</h3>
-            <p class="p-size--sm" style="color:#707070;">Formación integral en diseño, centrada en la interacción entre ser humano y entorno, con foco en el desarrollo local en un contexto global.</p>
-            <a href="https://diseno.uc.cl/programas-academicos/pregrado/perfil-de-egreso" class="uc-btn btn-inline btn-inline--bold" style="margin-top:auto;">Perfil de egreso <span class="uc-icon">arrow_forward</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-24">
-        <div class="uc-card card-height--same">
-          <div class="uc-card_body">
-            <h3 class="h4">Postgrado — MADA UC</h3>
-            <p class="p-size--sm" style="color:#707070;">Magíster en Diseño Avanzado orientado a la investigación y a la transferencia de conocimiento en diseño.</p>
-            <a href="https://diseno.uc.cl/programas-academicos/postgrado/mada-uc" class="uc-btn btn-inline btn-inline--bold" style="margin-top:auto;">Conoce el MADA UC <span class="uc-icon">arrow_forward</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-24">
-        <div class="uc-card card-height--same">
-          <div class="uc-card_body">
-            <h3 class="h4">Educación Continua</h3>
-            <p class="p-size--sm" style="color:#707070;">Diplomados y cursos para seguir formándote en diseño a lo largo de tu trayectoria profesional.</p>
-            <a href="https://diseno.uc.cl/educacion-continua/diplomados" class="uc-btn btn-inline btn-inline--bold" style="margin-top:auto;">Ver diplomados <span class="uc-icon">arrow_forward</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+                            <ul class="uc-footer_social">
+                                <!-- agregar enlaces a redes sociales correspondientes -->
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-twitter.svg"
+                                            alt="Twitter"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-facebook.svg"
+                                            alt="Facebook"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-instagram.svg"
+                                            alt="Instagram"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-linkedin.svg"
+                                            alt="Linkedin"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-youtube.svg"
+                                            alt="Youtube"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-flickr.svg"
+                                            alt="Flickr"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uc-footer_list-title footer-collapse-title" data-collapse="footerNavExample01">
+                            CONTACTO
+                        </div>
+                        <ul class="uc-footer_list footer-collapse" data-toggle="footerNavExample01">
+                            <li>Fono: +56 2 23545534</li>
+                            <li>El Comendador 1916, Providencia - Chile</li>
+                            <li>
+                                <a href="#"
+                                    ><a
+                                        href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/@-33.4202518,-70.6202817,17z/data=!4m13!1m7!3m6!1s0x9662cf608d0f317b:0x844e3a8482d4800c!2sEl+Comendador+1916,+Providencia,+Regi%C3%B3n+Metropolitana!3b1!8m2!3d-33.4202518!4d-70.618093!3m4!1s0x0:0x179482715007d19f!8m2!3d-33.4196244!4d-70.618585"
+                                        >¿Cómo llegar?</a
+                                    ></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uc-footer_list-title footer-collapse-title" data-collapse="footerNavExample02">
+                            ETC.
+                        </div>
+                        <ul class="uc-footer_list footer-collapse" data-toggle="footerNavExample02">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="uc-global-footer"></div>
+        </footer>
 
-<!-- ACREDITACIONES -->
-<section style="padding:32px 0;background:#f6f6f6;">
-  <div class="container">
-    <div class="dno-badge-row justify-content-center">
-      <img src="https://diseno.uc.cl/wp-content/themes/dno/img/ico-cumulus.png" alt="Cumulus" />
-      <p class="p-size--sm" style="max-width:340px;color:#707070;">International Association of Universities and Colleges of Art, Design and Media</p>
-      <img src="https://diseno.uc.cl/wp-content/themes/dno/img/ico-acredita.png" alt="CNA acreditación" />
-      <p class="p-size--sm" style="max-width:240px;color:#707070;">Carrera acreditada — 7 años / 2015-2022</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<footer class="uc-footer">
-  <div class="container pb-80">
-    <div class="row" data-accordion>
-      <div class="col-lg-6">
-        <div class="mb-40">
-          <a href="/">
-            <img
-              src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/logo-uc-blanco.svg"
-              alt="Pontificia Universidad Católica de Chile"
-              style="max-width: 240px"
-              class="img-fluid"
-            />
-          </a>
-          <p class="uc-subtitle subtitle-extended color-white mt-32">
-            ESCUELA DE DISEÑO
-          </p>
-
-          <ul class="uc-footer_social">
-            <!-- agregar enlaces a redes sociales correspondientes -->
-            <li>
-              <a href="#">
-                <img
-                  src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-twitter.svg"
-                  alt="Twitter"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-facebook.svg"
-                  alt="Facebook"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-instagram.svg"
-                  alt="Instagram"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-linkedin.svg"
-                  alt="Linkedin"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-youtube.svg"
-                  alt="Youtube"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-flickr.svg"
-                  alt="Flickr"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div
-          class="uc-footer_list-title footer-collapse-title"
-          data-collapse="footerNavExample01"
-        >
-          CONTACTO
-        </div>
-        <ul
-          class="uc-footer_list footer-collapse"
-          data-toggle="footerNavExample01"
-        >
-          <li>Fono: +56 2 23545534</li>
-          <li>El Comendador 1916, Providencia - Chile</li>
-          <li><a href="#"><a href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/@-33.4202518,-70.6202817,17z/data=!4m13!1m7!3m6!1s0x9662cf608d0f317b:0x844e3a8482d4800c!2sEl+Comendador+1916,+Providencia,+Regi%C3%B3n+Metropolitana!3b1!8m2!3d-33.4202518!4d-70.618093!3m4!1s0x0:0x179482715007d19f!8m2!3d-33.4196244!4d-70.618585">¿Cómo llegar?</a></a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <div
-          class="uc-footer_list-title footer-collapse-title"
-          data-collapse="footerNavExample02"
-        >
-          OTRO COSO
-        </div>
-        <ul class="uc-footer_list footer-collapse"
-          data-toggle="footerNavExample02"
-        >
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-      </div>
-
-
-    </div>
-  </div>
-  <div id="uc-global-footer"></div>
-</footer>
-
-
-
-
-<script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
-
-</body>
+        <script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
+    </body>
 </html>
