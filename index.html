@@ -9,86 +9,11 @@
             name="description"
             content="Una Escuela que ofrece al país profesionales que lideran la introducción masiva del Diseño en el tejido productivo e institucional, aportando con ello al desarrollo local en un contexto global."
         />
-        <link
-            rel="stylesheet"
-            href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css"
-        />
+        <link rel="stylesheet" href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css" />
+        <link rel="stylesheet" href="style.css" />
+
         <style>
-            /* Ajustes mínimos específicos de esta home, todo lo demás usa uc-kitdigital.css */
-            body {
-                background: #fff;
-            }
-            .dno-logo-word {
-                font-family: "Roboto Slab", serif;
-                font-weight: 700;
-                font-size: 1.35rem;
-                color: #173f8a;
-                line-height: 1;
-            }
-            .dno-logo-word span {
-                color: #0176de;
-            }
-            .dno-hero-eyebrow {
-                letter-spacing: 2px;
-            }
-            .dno-scroll-x {
-                display: flex;
-                gap: 16px;
-                overflow-x: auto;
-                padding-bottom: 8px;
-                scroll-snap-type: x mandatory;
-            }
-            .dno-scroll-x::-webkit-scrollbar {
-                height: 6px;
-            }
-            .dno-scroll-x::-webkit-scrollbar-thumb {
-                background: #c6c6c6;
-                border-radius: 4px;
-            }
-            .dno-scroll-x > * {
-                scroll-snap-align: start;
-                flex: 0 0 auto;
-            }
-            .dno-news-thumb {
-                width: 100%;
-                height: 210px;
-                object-fit: cover;
-                display: block;
-            }
-            .dno-avisos-thumb {
-                width: 100%;
-                height: 150px;
-                object-fit: cover;
-                display: block;
-            }
-            .dno-section-title {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 12px;
-                margin-bottom: 24px;
-            }
-            .dno-badge-row {
-                display: flex;
-                align-items: center;
-                gap: 24px;
-                flex-wrap: wrap;
-            }
-            .dno-badge-row img {
-                max-height: 56px;
-                width: auto;
-            }
-            .dno-footer-badges p {
-                font-size: 0.8rem;
-                line-height: 1.4;
-                color: #c6c6c6;
-                margin: 0;
-            }
-            .uc-hero {
-                max-height: 50vh !important;
-                height: auto;
-            }
+
         </style>
     </head>
     <body>
@@ -110,17 +35,19 @@
                         </div>
                     </div>
                     <ul class="uc-navbar_nav" style="position: relative; z-index: 99">
-                        <li class="nav-item">
-                            <a href="index.html" class="uc-btn btn-inline active">Inicio </a>
-                        </li>
+                        <!-- Portada -->
+                        <li class="nav-item"><a href="index.html" class="uc-btn btn-inline active">Portada</a></li>
+
+                        <!-- Escuela -->
                         <li class="nav-item uc-navbar-dropdown">
-                            <a href="#" class="uc-btn btn-inline"
-                                >Escuela <i class="uc-icon">arrow_drop_down</i>
-                            </a>
+                            <a href="#" class="uc-btn btn-inline">Escuela <i class="uc-icon">arrow_drop_down</i></a>
                             <ul class="uc-navbar-dropdown_menu">
                                 <li class="dropdown_item--heading">
                                     <a href="#" class="uc-btn">Escuela</a>
                                     <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="presentacion.html" class="uc-btn">Presentación</a>
+                                        </li>
                                         <li class="uc-navbar-dropdown_item">
                                             <a href="historia.html" class="uc-btn">Historia</a>
                                         </li>
@@ -134,127 +61,360 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <!-- Pregrado -->
                         <li class="nav-item uc-navbar-dropdown">
-                            <a href="#" class="uc-btn btn-inline"
-                                >Educación continua <i class="uc-icon">arrow_drop_down</i>
-                            </a>
+                            <a href="#" class="uc-btn btn-inline">Pregrado <i class="uc-icon">arrow_drop_down</i></a>
                             <ul class="uc-navbar-dropdown_menu">
                                 <li class="dropdown_item--heading">
-                                    <a href="#" class="uc-btn">Educación continua</a>
+                                    <a href="#" class="uc-btn">Pregrado</a>
                                     <ul class="uc-navbar-dropdown_child">
                                         <li class="uc-navbar-dropdown_item">
-                                            <a href="#" class="uc-btn">Diplomados</a>
+                                            <a href="#" class="uc-btn">Perfil de Egreso</a>
                                         </li>
-
                                         <li class="uc-navbar-dropdown_item">
-                                            <a href="#" class="uc-btn">Cursos</a>
+                                            <a href="#" class="uc-btn">Malla Curricular</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Open Day</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Campo Laboral y Prácticas</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Proyectos de Titulación Profesional</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#.html" class="uc-btn">Postulación y admisión</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                       <li class="nav-item">
-                            <a href="#" class="uc-btn btn-inline">Etc…</a>
-                        </li>                        
+
+                        <!-- Postgrado -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline">Postgrado <i class="uc-icon">arrow_drop_down</i></a>
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Postgrado</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item dropdown_item--label">
+                                            <strong>Magíster (MADA)</strong>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Presentación</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Malla Curricular</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a
+                                                href="https://admision.uc.cl/postgrado/magister/magister-en-diseno-avanzado/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="uc-btn"
+                                                >Arancel y Requisitos <i class="uc-icon">open_in_new</i></a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item dropdown_item--label">
+                                            <strong>Doctorado</strong>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a
+                                                href="https://doctoradofadeu.uc.cl/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="uc-btn"
+                                                >Doctorado en Arquitectura, Diseño y Estudios Urbanos
+                                                <i class="uc-icon">open_in_new</i></a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Educación Continua y Profesional -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline"
+                                >Educación Continua y Profesional <i class="uc-icon">arrow_drop_down</i></a
+                            >
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Educación Continua y Profesional</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Presentación</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="diplomados.html" class="uc-btn">Diplomados</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Cursos y Talleres</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Investigación y Transferencia -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline"
+                                >Investigación y Transferencia <i class="uc-icon">arrow_drop_down</i></a
+                            >
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Investigación y Transferencia</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Presentación y Líneas de Investigación</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Comité de Investigadores y Doctores</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Publicaciones, Proyectos y Patentes</a
+                                            >
+                                        </li>
+
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a
+                                                href="https://www.revistadisena.uc.cl/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="uc-btn"
+                                                >Revista Diseña <i class="uc-icon">open_in_new</i></a
+                                            >
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Buscar -->
+                        <li class="nav-item">
+
+
+                            <a href="#" class="uc-btn btn-inline" data-mtarget="modalExample">
+                                Buscar
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                    style="margin-left: 10px"
+                                >
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+
                 <!-- Menú para versión Móvil -->
                 <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
                     <div class="uc-navbar_mobile-bar navbar-brand">
                         <div class="uc-navbar_mobile-logo navbar-light">
                             <div class="h2 text-font--serif text-color--blue">Diseño UC</div>
                         </div>
-                        <a href="javascript:void(0);" class="uc-navbar_mobile-button">
-                            <span class="uc-icon"></span>
-                        </a>
+                        <a href="javascript:void(0);" class="uc-navbar_mobile-button"><span class="uc-icon"></span></a>
                     </div>
                     <div class="uc-navbar_mobile-content">
                         <ul class="uc-navbar_mobile-list">
+                            <li class="list-item"><a href="index.html">Portada</a></li>
+
                             <li class="list-item has-list-children">
-                                <a class="list-open" href="#">
-                                    Pregrado
-                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-                                </a>
+                                <a class="list-open" href="#"
+                                    >Escuela <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
                                 <ul class="list-item list-children">
                                     <li class="list-item">
-                                        <a href="#" class="list-close">
-                                            <div class="uc-icon icon-size--sm">arrow_back_ios</div>
-                                            Pregrado
-                                        </a>
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Escuela</a
+                                        >
                                     </li>
-                                    <!-- loop de elementos -->
+                                    <li class="list-item"><a href="presentacion.html">Presentación</a></li>
+                                    <li class="list-item"><a href="historia.html">Historia</a></li>
+                                    <li class="list-item"><a href="infraestructura.html">Infraestructura</a></li>
+                                    <li class="list-item"><a href="personas.html">Personas</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Pregrado <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Pregrado</a
+                                        >
+                                    </li>
+                                    <li class="list-item"><a href="#">Perfil de Egreso</a></li>
+                                    <li class="list-item"><a href="#">Malla Curricular</a></li>
+                                    <li class="list-item">
+                                        <a href="#">Open Day</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Campo Laboral y Prácticas</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Proyectos de Titulación Profesional</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Postulación y admisión</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Postgrado (multinivel) -->
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Postgrado <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Postgrado</a
+                                        >
+                                    </li>
+
                                     <li class="list-item has-list-children">
-                                        <a href="#" class="list-open">
-                                            Item 1
-                                            <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-                                        </a>
+                                        <a class="list-open" href="#"
+                                            >Magíster (MADA) <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                        >
                                         <ul class="list-children">
                                             <li class="list-item">
-                                                <a href="#" class="list-close text-color--gray">
-                                                    <span class="uc-icon">arrow_back_ios</span>
-                                                    Item child
-                                                </a>
+                                                <a href="#" class="list-close text-color--gray"
+                                                    ><span class="uc-icon">arrow_back_ios</span> Magíster (MADA)</a
+                                                >
                                             </li>
                                             <li class="list-item">
-                                                <a href="/">Item child</a>
+                                                <a href="#">Presentación</a>
                                             </li>
                                             <li class="list-item">
-                                                <a href="/">Item child</a>
+                                                <a href="#">Malla Curricular</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a
+                                                    href="https://admision.uc.cl/postgrado/magister/magister-en-diseno-avanzado/"
+                                                    target="_blank"
+                                                    rel="noopener"
+                                                    >Arancel y Requisitos <i class="uc-icon">open_in_new</i></a
+                                                >
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="list-item">
-                                        <a href="/">
-                                            Item child
-                                            <i class="uc-icon">launch</i>
-                                        </a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a href="/">Item child</a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a href="/">Item child</a>
+
+                                    <li class="list-item has-list-children">
+                                        <a class="list-open" href="#"
+                                            >Doctorado <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                        >
+                                        <ul class="list-children">
+                                            <li class="list-item">
+                                                <a href="#" class="list-close text-color--gray"
+                                                    ><span class="uc-icon">arrow_back_ios</span> Doctorado</a
+                                                >
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="https://doctoradofadeu.uc.cl/" target="_blank" rel="noopener"
+                                                    >Doctorado en Arquitectura, Diseño y Estudios Urbanos
+                                                    <i class="uc-icon">open_in_new</i></a
+                                                >
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="list-item">
-                                <a href="#">Item 2</a>
-                            </li>
+
                             <li class="list-item has-list-children">
-                                <a class="list-open" href="#">
-                                    Desplegable 2
-                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i>
-                                </a>
+                                <a class="list-open" href="#"
+                                    >Educación Continua y Profesional
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
                                 <ul class="list-item list-children">
                                     <li class="list-item">
-                                        <a href="#" class="list-close">
-                                            <div class="uc-icon icon-size--sm">arrow_back_ios</div>
-                                            Desplegable 2
-                                        </a>
-                                    </li>
-                                    <!-- loop de elementos -->
-                                    <li class="list-item">
-                                        <a href="#">Item 1</a>
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Educación Continua y Profesional</a
+                                        >
                                     </li>
                                     <li class="list-item">
-                                        <a href="#">Item 2</a>
+                                        <a href="#">Presentación</a>
+                                    </li>
+                                    <li class="list-item"><a href="diplomados.html">Diplomados</a></li>
+                                    <li class="list-item"><a href="#">Cursos y Talleres</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Investigación y Transferencia
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Investigación y Transferencia</a
+                                        >
                                     </li>
                                     <li class="list-item">
-                                        <a href="#">Item 3</a>
+                                        <a href="#">Comité de Investigadores y Doctores</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Presentación y Líneas de Investigación</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="investigacion-publicaciones.html"
+                                            >Publicaciones, Proyectos y Patentes</a
+                                        >
+                                    </li>                                    
+                                    <li class="list-item">
+                                        <a href="https://www.revistadisena.uc.cl/" target="_blank" rel="noopener"
+                                            >Revista Diseña <i class="uc-icon">open_in_new</i></a
+                                        >
                                     </li>
                                 </ul>
                             </li>
+
+                            <!-- Buscar -->
                             <li class="list-item">
-                                <a href="#">Item 4</a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#">Item 5</a>
+                                <a href="#" data-mtarget="modalExample">Buscar <i class="uc-icon icon-size--sm">search</i></a
+                                >
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+
+
+
+
+
+
+
 
         <!-- HERO -->
         <aside class="uc-hero" aria-label="Portada Escuela de Diseño UC">
@@ -268,7 +428,7 @@
                 <div class="uc-hero__content uc-hero__content--bottom">
                     <div style="max-width: 720px; padding-bottom: 48px">
                         <p class="uc-subtitle dno-hero-eyebrow" style="color: #fec60d; margin-top: 30px">
-                            Escuela de Diseño UC
+                            RANKING QS
                         </p>
                         <h1 class="color-white" style="margin-bottom: 16px">
                             Diseño UC entre las mejores escuelas de diseño del mundo
@@ -310,7 +470,7 @@
             </div>
         </section>
 
-        <!-- LANZAMIENTOS DESTACADOS -->
+        <!-- AGENDA -->
         <section style="padding: 48px 0">
             <div class="container">
                 <div class="dno-section-title">
@@ -319,9 +479,9 @@
                         <h2 class="mb-0">Próximas actividades</h2>
                     </div>
                     <a
-                        href="https://diseno.uc.cl/comunicaciones/actualidad/agenda"
+                        href="#"
                         class="uc-btn btn-inline btn-inline--bold"
-                        >Ver todas <span class="uc-icon icon-shape--rounded">add</span></a
+                        >Ver todas las actividades<span class="uc-icon icon-shape--rounded">add</span></a
                     >
                 </div>
 
@@ -334,6 +494,7 @@
                                 loading="lazy"
                                 height="100"
                                 width="100%"
+                                alt=""
                             />
                             <div class="uc-card_body">
                                 <div class="uc-card card-type--date">
@@ -342,9 +503,9 @@
                                 </div>
                                 <span class="uc-subtitle mt-20 mb-16">Teatro</span>
                                 <div class="d-flex h-full flex-column">
-                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
-                                    </a>
+                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16"
+                                        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.</a
+                                    >
                                 </div>
                                 <div class="uc-card_event--content">
                                     <div class="date">25 de Agosto, 2026</div>
@@ -363,6 +524,7 @@
                                 loading="lazy"
                                 height="100"
                                 width="100%"
+                                alt=""
                             />
                             <div class="uc-card_body">
                                 <div class="uc-card card-type--date">
@@ -371,9 +533,9 @@
                                 </div>
                                 <span class="uc-subtitle mt-20 mb-16">Teatro</span>
                                 <div class="d-flex h-full flex-column">
-                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
-                                    </a>
+                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16"
+                                        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.</a
+                                    >
                                 </div>
                                 <div class="uc-card_event--content">
                                     <div class="date">25 de Agosto, 2026</div>
@@ -392,6 +554,7 @@
                                 loading="lazy"
                                 height="100"
                                 width="100%"
+                                alt=""
                             />
                             <div class="uc-card_body">
                                 <div class="uc-card card-type--date">
@@ -400,9 +563,9 @@
                                 </div>
                                 <span class="uc-subtitle mt-20 mb-16">Teatro</span>
                                 <div class="d-flex h-full flex-column">
-                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.
-                                    </a>
+                                    <a href="#" target="_blank" class="d-flex h4 color-black uc-card-link mb-16"
+                                        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, minus.</a
+                                    >
                                 </div>
                                 <div class="uc-card_event--content">
                                     <div class="date">25 de Agosto, 2026</div>
@@ -416,8 +579,10 @@
             </div>
         </section>
 
+
+
         <!-- AVISOS / SITIOS DE INTERÉS -->
-        <section style="padding: 8px 0 48px">
+        <section style="padding: 48px 0 8px">
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-md-3">
@@ -493,7 +658,7 @@
         </section>
 
         <!-- NOTICIAS -->
-        <section style="padding: 16px 0 56px; background: #f6f6f6">
+        <section style="padding: 56px 0 46px; background: #f6f6f6">
             <div class="container">
                 <div class="dno-section-title">
                     <div>
@@ -641,7 +806,7 @@
                 <div class="dno-section-title">
                     <div>
                         <p class="uc-subtitle" style="color: #0176de">Formación</p>
-                        <h2>Nuestros programas académicos</h2>
+                        <h2>Fórmate en nuestra Escuela</h2>
                     </div>
                 </div>
 
@@ -666,7 +831,7 @@
                     <div class="col-12 col-md-4 mb-24">
                         <div class="uc-card card-height--same">
                             <div class="uc-card_body">
-                                <h3 class="h4">Postgrado — MADA UC</h3>
+                                <h3 class="h4">Postgrado</h3>
                                 <p class="p-size--sm" style="color: #707070">
                                     Magíster en Diseño Avanzado orientado a la investigación y a la transferencia de
                                     conocimiento en diseño.
@@ -683,7 +848,7 @@
                     <div class="col-12 col-md-4 mb-24">
                         <div class="uc-card card-height--same">
                             <div class="uc-card_body">
-                                <h3 class="h4">Educación Continua</h3>
+                                <h3 class="h4">Educación Continua y Profesional</h3>
                                 <p class="p-size--sm" style="color: #707070">
                                     Diplomados y cursos para seguir formándote en diseño a lo largo de tu trayectoria
                                     profesional.
@@ -715,56 +880,49 @@
                                 />
                             </a>
                             <p class="uc-subtitle subtitle-extended color-white mt-32">ESCUELA DE DISEÑO</p>
-
                             <ul class="uc-footer_social">
                                 <!-- agregar enlaces a redes sociales correspondientes -->
                                 <li>
-                                    <a href="#">
-                                        <img
+                                    <a href="#"
+                                        ><img
                                             src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-twitter.svg"
                                             alt="Twitter"
-                                        />
-                                    </a>
+                                    /></a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img
+                                    <a href="#"
+                                        ><img
                                             src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-facebook.svg"
                                             alt="Facebook"
-                                        />
-                                    </a>
+                                    /></a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img
+                                    <a href="#"
+                                        ><img
                                             src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-instagram.svg"
                                             alt="Instagram"
-                                        />
-                                    </a>
+                                    /></a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img
+                                    <a href="#"
+                                        ><img
                                             src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-linkedin.svg"
                                             alt="Linkedin"
-                                        />
-                                    </a>
+                                    /></a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img
+                                    <a href="#"
+                                        ><img
                                             src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-youtube.svg"
                                             alt="Youtube"
-                                        />
-                                    </a>
+                                    /></a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img
+                                    <a href="#"
+                                        ><img
                                             src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-flickr.svg"
                                             alt="Flickr"
-                                        />
-                                    </a>
+                                    /></a>
                                 </li>
                             </ul>
                         </div>
@@ -777,11 +935,11 @@
                             <li>Fono: +56 2 23545534</li>
                             <li>El Comendador 1916, Providencia - Chile</li>
                             <li>
-                                <a href="#"
-                                    ><a
-                                        href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/@-33.4202518,-70.6202817,17z/data=!4m13!1m7!3m6!1s0x9662cf608d0f317b:0x844e3a8482d4800c!2sEl+Comendador+1916,+Providencia,+Regi%C3%B3n+Metropolitana!3b1!8m2!3d-33.4202518!4d-70.618093!3m4!1s0x0:0x179482715007d19f!8m2!3d-33.4196244!4d-70.618585"
-                                        >¿Cómo llegar?</a
-                                    ></a
+                                <a
+                                    href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/@-33.4202518,-70.6202817,17z/data=!4m13!1m7!1m6!1s0x9662cf608d0f317b:0x844e3a8482d4800c!2sEl+Comendador+1916,+Providencia,+Regi%C3%B3n+Metropolitana!3b1!8m2!3d-33.4202518!4d-70.618093!3m4!1s0x0:0x179482715007d19f!8m2!3d-33.4196244!4d-70.618585"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >¿Cómo llegar?</a
                                 >
                             </li>
                         </ul>
@@ -801,6 +959,48 @@
             <div id="uc-global-footer"></div>
         </footer>
 
+        <!-- Modal de Búsqueda -->
+
+            <div data-modal="modalExample" class="uc-modal" open>
+              <div class="uc-modal_content uc-message  mb-32">
+                <button class="uc-message_close-button" data-mclosed>
+                  <i class="uc-icon">close</i>
+                </button>
+                <div class="uc-message_body">
+                    
+                  <h2 class="mb-24">
+                    <i class="uc-icon warning-icon">info</i> Buscar
+                  </h2>
+                  <p class="no-margin">
+                    Ante el aviso de una posible bomba, y como medida de precaución, se
+                    solicita a la comunidad UC de Campus San Joaquín , evacuar el campus a
+                    la brevedad. Todos deben dirigirse a la salida más cercana y seguir las
+                    instrucciones del personal de seguridad. Carabineros ya está en el lugar
+                    evaluando la situación.
+                  </p>
+                  <hr class="uc-hr my-32" />
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <p class="no-margin">Emergencias uc</p>
+                      <a href="#" class="uc-link uc-btn btn-inline"
+                        ><i class="uc-icon no-margin">phone</i> (56)22354 5000</a
+                      >
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <a href="#" class="uc-link uc-btn btn-inline">
+                        Buscador avanzado
+                        <i class="uc-icon icon-shape--rounded">arrow_forward</i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+        </div>
         <script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
     </body>
 </html>
