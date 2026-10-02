@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="referrer" content="no-referrer" />
+        <meta name="robots" content="noindex, nofollow">
+        <title>Memorias de Proyecto de Título | Diseño UC</title>
+        <meta name="description" content="Adaptándose al Kit Digital UC" />
+        <link
+            rel="stylesheet"
+            href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css"
+        />
+        <script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js" defer></script>
+        <style>
+            body {
+                background: #fff;
+            }
+            .dno-logo-word {
+                font-family: "Roboto Slab", serif;
+                font-weight: 700;
+                font-size: 1.35rem;
+                color: #173f8a;
+                line-height: 1;
+            }
+            .dno-logo-word span {
+                color: #0176de;
+            }
+            .dno-historia-hero {
+                width: 100%;
+                height: 340px;
+                object-fit: cover;
+                border-radius: 4px;
+                display: block;
+                margin-bottom: 32px;
+            }
+            .dno-historia-lead {
+                font-size: 1.35rem;
+                line-height: 1.5;
+                font-weight: 600;
+                color: #000;
+                margin-bottom: 24px;
+            }
+            .dno-historia-body p {
+                line-height: 1.75;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .dno-sub-card-img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                display: block;
+            }
+            .dno-stats { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0; }
+            .dno-stat { flex: 1 1 200px; border: 1px solid #e0e0e0; border-radius: 4px; padding: 16px; }
+            .dno-stat strong { display: block; font-size: 2rem; color: #0176de; line-height: 1.1; }
+            .dno-filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+            .dno-filters input, .dno-filters select { padding: 8px 12px; border: 1px solid #b8b8b8; border-radius: 4px; font: inherit; }
+            .dno-filters input { flex: 1 1 260px; }
+            .dno-table-wrap { overflow-x: auto; }
+            .dno-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+            .dno-table th { text-align: left; background: #f4f4f4; padding: 10px 12px; white-space: nowrap; }
+            .dno-table td { padding: 10px 12px; border-top: 1px solid #e0e0e0; vertical-align: top; color: #333; }
+            .dno-table td.num { white-space: nowrap; text-align: center; }
+        </style>
+    </head>
+    <body>
+        <header class="uc-header">
+            <div id="uc-global-topbar"></div>
+            <nav class="uc-navbar">
+                <!-- Menú para versión Escritorio -->
+                <div class="container d-none d-lg-block">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-xl-2">
+                            <img
+                                src="https://kit-digital-uc-desa.s3.amazonaws.com/img/logo-uc-azul.svg"
+                                alt="Pontificia Universidad Católica de Chile"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="col-lg-8 col-xl-9 pl-60">
+                            <div class="h2 text-font--serif text-color--blue mt-24">Diseño UC</div>
+                        </div>
+                    </div>
+                    <ul class="uc-navbar_nav" style="position: relative; z-index: 99">
+                        <!-- Portada -->
+                        <li class="nav-item"><a href="index.html" class="uc-btn btn-inline">Portada</a></li>
+
+                        <!-- Escuela -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline">Escuela <i class="uc-icon">arrow_drop_down</i></a>
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Escuela</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="presentacion.html" class="uc-btn active">Presentación</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="historia.html" class="uc-btn">Historia</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="infraestructura.html" class="uc-btn">Infraestructura</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="personas.html" class="uc-btn">Personas</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Pregrado -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline">Pregrado <i class="uc-icon">arrow_drop_down</i></a>
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Pregrado</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Perfil de Egreso</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Malla Curricular</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Open Day</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Campo Laboral y Prácticas</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="memorias.html" class="uc-btn active"
+                                                >Proyectos de Titulación Profesional</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#.html" class="uc-btn">Postulación y admisión</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Postgrado -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline">Postgrado <i class="uc-icon">arrow_drop_down</i></a>
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Postgrado</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item dropdown_item--label">
+                                            <strong>Magíster (MADA)</strong>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Presentación</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Malla Curricular</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a
+                                                href="https://admision.uc.cl/postgrado/magister/magister-en-diseno-avanzado/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="uc-btn"
+                                                >Arancel y Requisitos <i class="uc-icon">open_in_new</i></a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item dropdown_item--label">
+                                            <strong>Doctorado</strong>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a
+                                                href="https://doctoradofadeu.uc.cl/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="uc-btn"
+                                                >Doctorado en Arquitectura, Diseño y Estudios Urbanos
+                                                <i class="uc-icon">open_in_new</i></a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Educación Continua y Profesional -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline"
+                                >Educación Continua y Profesional <i class="uc-icon">arrow_drop_down</i></a
+                            >
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Educación Continua y Profesional</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Presentación</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="diplomados.html" class="uc-btn">Diplomados</a>
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn">Cursos y Talleres</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Investigación y Transferencia -->
+                        <li class="nav-item uc-navbar-dropdown">
+                            <a href="#" class="uc-btn btn-inline"
+                                >Investigación y Transferencia <i class="uc-icon">arrow_drop_down</i></a
+                            >
+                            <ul class="uc-navbar-dropdown_menu">
+                                <li class="dropdown_item--heading">
+                                    <a href="#" class="uc-btn">Investigación y Transferencia</a>
+                                    <ul class="uc-navbar-dropdown_child">
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Presentación y Líneas de Investigación</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Comité de Investigadores y Doctores</a
+                                            >
+                                        </li>
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a href="#" class="uc-btn"
+                                                >Publicaciones, Proyectos y Patentes</a
+                                            >
+                                        </li>
+
+                                        <li class="uc-navbar-dropdown_item">
+                                            <a
+                                                href="https://www.revistadisena.uc.cl/"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="uc-btn"
+                                                >Revista Diseña <i class="uc-icon">open_in_new</i></a
+                                            >
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Buscar -->
+                        <li class="nav-item">
+                            <a href="#" class="uc-btn btn-inline" data-dno-modal-open="searchModal">
+                                Buscar
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                    style="margin-left: 10px"
+                                >
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Menú para versión Móvil -->
+                <div class="uc-navbar_mobile navbar_mobile-slide d-block d-lg-none">
+                    <div class="uc-navbar_mobile-bar navbar-brand">
+                        <div class="uc-navbar_mobile-logo navbar-light">
+                            <div class="h2 text-font--serif text-color--blue">Diseño UC</div>
+                        </div>
+                        <a href="javascript:void(0);" class="uc-navbar_mobile-button"><span class="uc-icon"></span></a>
+                    </div>
+                    <div class="uc-navbar_mobile-content">
+                        <ul class="uc-navbar_mobile-list">
+                            <li class="list-item"><a href="index.html">Portada</a></li>
+
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Escuela <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Escuela</a
+                                        >
+                                    </li>
+                                    <li class="list-item"><a href="presentacion.html">Presentación</a></li>
+                                    <li class="list-item"><a href="historia.html">Historia</a></li>
+                                    <li class="list-item"><a href="infraestructura.html">Infraestructura</a></li>
+                                    <li class="list-item"><a href="personas.html">Personas</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Pregrado <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Pregrado</a
+                                        >
+                                    </li>
+                                    <li class="list-item"><a href="#">Perfil de Egreso</a></li>
+                                    <li class="list-item"><a href="#">Malla Curricular</a></li>
+                                    <li class="list-item">
+                                        <a href="#">Open Day</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Campo Laboral y Prácticas</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="memorias.html">Proyectos de Titulación Profesional</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Postulación y admisión</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Postgrado (multinivel) -->
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Postgrado <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Postgrado</a
+                                        >
+                                    </li>
+
+                                    <li class="list-item has-list-children">
+                                        <a class="list-open" href="#"
+                                            >Magíster (MADA) <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                        >
+                                        <ul class="list-children">
+                                            <li class="list-item">
+                                                <a href="#" class="list-close text-color--gray"
+                                                    ><span class="uc-icon">arrow_back_ios</span> Magíster (MADA)</a
+                                                >
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="#">Presentación</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="#">Malla Curricular</a>
+                                            </li>
+                                            <li class="list-item">
+                                                <a
+                                                    href="https://admision.uc.cl/postgrado/magister/magister-en-diseno-avanzado/"
+                                                    target="_blank"
+                                                    rel="noopener"
+                                                    >Arancel y Requisitos <i class="uc-icon">open_in_new</i></a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="list-item has-list-children">
+                                        <a class="list-open" href="#"
+                                            >Doctorado <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                        >
+                                        <ul class="list-children">
+                                            <li class="list-item">
+                                                <a href="#" class="list-close text-color--gray"
+                                                    ><span class="uc-icon">arrow_back_ios</span> Doctorado</a
+                                                >
+                                            </li>
+                                            <li class="list-item">
+                                                <a href="https://doctoradofadeu.uc.cl/" target="_blank" rel="noopener"
+                                                    >Doctorado en Arquitectura, Diseño y Estudios Urbanos
+                                                    <i class="uc-icon">open_in_new</i></a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Educación Continua y Profesional
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Educación Continua y Profesional</a
+                                        >
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Presentación</a>
+                                    </li>
+                                    <li class="list-item"><a href="diplomados.html">Diplomados</a></li>
+                                    <li class="list-item"><a href="#">Cursos y Talleres</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="list-item has-list-children">
+                                <a class="list-open" href="#"
+                                    >Investigación y Transferencia
+                                    <i class="uc-icon icon-size--sm">arrow_forward_ios</i></a
+                                >
+                                <ul class="list-item list-children">
+                                    <li class="list-item">
+                                        <a href="#" class="list-close"
+                                            ><div class="uc-icon icon-size--sm">arrow_back_ios</div>
+                                            Investigación y Transferencia</a
+                                        >
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Comité de Investigadores y Doctores</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">Presentación y Líneas de Investigación</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="investigacion-publicaciones.html"
+                                            >Publicaciones, Proyectos y Patentes</a
+                                        >
+                                    </li>                                    
+                                    <li class="list-item">
+                                        <a href="https://www.revistadisena.uc.cl/" target="_blank" rel="noopener"
+                                            >Revista Diseña <i class="uc-icon">open_in_new</i></a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Buscar -->
+                            <li class="list-item">
+                                <a href="#" data-dno-modal-open="searchModal"
+                                    >Buscar <i class="uc-icon icon-size--sm">search</i></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <!-- BREADCRUMB -->
+            <div style="padding: 32px 0 8px">
+                <nav aria-label="breadcrumb" style="padding: 24px 0 0">
+                    <ol class="uc-breadcrumb">
+                        <li class="uc-breadcrumb_item">
+                            <a href="index.html">Inicio</a><span class="uc-icon icon-size--sm">chevron_right</span>
+                        </li>
+                        <li class="uc-breadcrumb_item">
+                            <a href="#">Pregrado</a><span class="uc-icon icon-size--sm">chevron_right</span>
+                        </li>
+                        <li class="uc-breadcrumb_item current">Proyectos de Titulación Profesional</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="row" style="margin-top: 16px">
+                <div class="col-12">
+                    <h1 style="margin-bottom: 8px">Proyectos de Titulación Profesional</h1>
+                    <p class="dno-historia-lead">Memorias destacadas</p>
+
+                    <div class="dno-filters">
+                        <input type="search" id="q" placeholder="Buscar por estudiante, profesor/a o proyecto" aria-label="Buscar" />
+                        <select id="fy" aria-label="Año"><option value="">Todos los años</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option></select>
+                        <select id="fa" aria-label="Ámbito"><option value="">Todos los ámbitos</option><option>Alimentación y Gastronomía</option><option>Alimentación, Gastronomía</option><option>Artes aplicadas</option><option>Artesanía, Artes aplicadas</option><option>Bienestar</option><option>Ciencia y Tecnología</option><option>Ciudad, Ambiente, Equipamiento</option><option>Comunicación</option><option>Cultura, Historia y Religión</option><option>Cultura, Historia, Religión</option><option>Deporte</option><option>Economía y Empresa</option><option>Educación</option><option>Identidad, Género</option><option>Inclusión, Migración, Discapacidad</option><option>Moda</option><option>Otro</option><option>Salud</option><option>Sustentabilidad</option><option>Transporte</option><option>Turismo</option></select>
+                    </div>
+                    <p class="p-size--sm" style="color: #707070" id="count"></p>
+
+                    <div class="dno-table-wrap">
+                        <table class="dno-table" id="tbl">
+                            <thead>
+                                <tr><th>Estudiante</th><th>Profesor/a Guía</th><th>Año</th><th>Nombre del Proyecto</th><th>Ámbito</th><th>PDF</th><th>Evaluación</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>AREVALO KARL CAROLINA BELEN</strong></td><td>HERMANSEN, P.</td><td class="num">2010</td><td>Indumentarias Carnaveleras</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BUNSTER CHARME PILAR</strong></td><td>CANCINO, J.</td><td class="num">2010</td><td>Rayo</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ESCOBAR CONTRERAS DANIELA ANDREA</strong></td><td>POZO, P.</td><td class="num">2010</td><td>PIXELPOEMA, RED POÉTICA SIGLO XXI</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>HERNANDEZ WILSON MARIA CRISTINA</strong></td><td>HOCES, S.</td><td class="num">2010</td><td>Waw memorias de color</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MALIS ROSENZWEIG KATHERINA MIJAL</strong></td><td>ALLARD, J.</td><td class="num">2010</td><td>Donar, desde el corazón sin dejar de usar la razón.</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PEREZ-INIGO BARAONA MARIA INES</strong></td><td>ALVAREZ, P.</td><td class="num">2010</td><td>Alma carteras y accesorios</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROJAS CARVAJAL JAVIERA PAZ</strong></td><td>GONZÁLEZ, A.</td><td class="num">2010</td><td>MEDIADOR INTERACTIVO PARA EL CONSUMO DE FRUTAS</td><td>Alimentación y Gastronomía</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROMERO REBOLLEDO JONATHAN JESUS</strong></td><td>ESPINOZA, G.</td><td class="num">2010</td><td>Sibarita oli microexpeller electroprocesadores de aceite</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BRANADA ROJAS VALENTINA</strong></td><td>UBILLA, M.</td><td class="num">2011</td><td>TROI</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CARMONA FONTAINE MARIA JOSE</strong></td><td>ALVAREZ, P.</td><td class="num">2011</td><td>Entremares</td><td>Educación</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CRISTI ROJAS NICOLE ANDREA</strong></td><td>CASTILLO, E.</td><td class="num">2011</td><td>Creación al margen</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>JORQUERA CRUZ CATALINA ALEJANDRA</strong></td><td>LEONARD, D.</td><td class="num">2011</td><td>Pure light</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>AGUIRRE ULLOA MANUELA</strong></td><td>GONZÁLEZ, A.</td><td class="num">2012</td><td>Designing For Dignity</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CHACANA MATKOVIC DANIEL ARTURO</strong></td><td>GONZÁLEZ, A.</td><td class="num">2012</td><td>Desarrollo De Prototipo Y Componentes De Handikite Para Minusvalidos</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FLORES REYES GERARDO ALEXIS</strong></td><td>GONZÁLEZ, A.</td><td class="num">2012</td><td>Industria Del Arandano Como Oportunidad De Diseño</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>HACHIM DIAZ MILENA AMARANTA</strong></td><td>ULIBARRI, X.</td><td class="num">2012</td><td>Santiago Patiperro</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MEGE QUESNEY PEDRO</strong></td><td>UBILLA, M.</td><td class="num">2012</td><td>Habilitar Desde El Gesto</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>UNDURRAGA AGUERO ANTONIA</strong></td><td>GONZÁLEZ, A.</td><td class="num">2012</td><td>La Navegación A Vela: Mas Allá De Una Superficie Aerodinámica</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>URETA MARIN CAROLA PALOMA</strong></td><td>ALVAREZ, P.</td><td class="num">2012</td><td>Luis Fdo.Rojas Cronista Visual 1875-1942</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BRAVO HEPP SOFIA CONSTANZA</strong></td><td>ALVAREZ, P.</td><td class="num">2013</td><td>SIGNOS DE BARRO</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BULNES LLOMPART PAULA MARIA</strong></td><td>GONZÁLEZ, A.</td><td class="num">2013</td><td>APICOL</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MACHUCA ETEROVIC CAROLINA ANDREA</strong></td><td>ALLARD, J.</td><td class="num">2013</td><td>D&#x27;CHILE</td><td>Turismo</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>COSTA CONTRERAS PAOLA FRANCISCA</strong></td><td>DURAN, A.</td><td class="num">2013</td><td>Calzado a medida asistido por medio digitales</td><td>Economía y Empresa</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GODOY GUERRERO FERNANDA</strong></td><td>BRIONES, M.</td><td class="num">2013</td><td>Espora: difundiendo la agricultura urbana</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>HUBER SOTO BEATRIZ FLORENCIA</strong></td><td>ULIBARRI, X.</td><td class="num">2013</td><td>TASTING CHILE</td><td>Alimentación y Gastronomía</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MARDONEZ EYZAGUIRRE MARIA IGNACIA</strong></td><td>ALVAREZ, P.</td><td class="num">2013</td><td>Matapenas, hierbas y medicina popular chilena</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PEREZ SANCHEZ IGNACIO ANDRES</strong></td><td>DURAN, A.</td><td class="num">2013</td><td>REALIDAD MIXTA Y SIMULACION</td><td>—</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ASTORGA ARIAS SOFIA ALEJANDRA</strong></td><td>ARIAS, R.</td><td class="num">2014</td><td>Mas Atierra</td><td>Sustentabilidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MORALES ROJAS GONZALO IGNACIO</strong></td><td>ALVAREZ, P.</td><td class="num">2014</td><td>Historia de la Infografia en Chile</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>OVALLE BAMBACH ELVIRA</strong></td><td>HOCES, S.</td><td class="num">2014</td><td>FACTORÍA MACUL</td><td>Artesanía, Artes aplicadas</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PARAS SALAZAR EDUARDO FELIPE</strong></td><td>DURAN, A.</td><td class="num">2014</td><td>Torbellino Degu, videojuego para la generacion de aprendizaje activo.</td><td>Educación</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VILLAMANDOS SOTO ANTONIO MANUEL</strong></td><td>RAMIREZ, R.</td><td class="num">2014</td><td>Mastica Astros, El videojuego como medio de divulgación astronómica</td><td>Educación</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CARRASCO LUENGO NATALIA PAZ</strong></td><td>HERMANSEN, P.</td><td class="num">2014</td><td>Plataforma Horizonte</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>COX BUSTAMANTE MONICA ISABEL</strong></td><td>LEONARD, D.</td><td class="num">2014</td><td>Guía de buenas prácticas sobre el color y la luz en el retail y tiendas por departamentos</td><td>Ciudad, Ambiente, Equipamiento</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GARCIA ALBORNOZ LISSETT ERNESTINA</strong></td><td>RAMIREZ, R.</td><td class="num">2014</td><td>Futuro Ciudadano</td><td>Educación</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GURIDI SOTOMAYOR SOFIA</strong></td><td>ALLARD, J.</td><td class="num">2014</td><td>DILO AL BIP!</td><td>Transporte</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>LABADIA DRAPELA JUAN DIEGO</strong></td><td>VIVANCO, T.</td><td class="num">2014</td><td>Khunu, un esqui para la Cordillera de los Andes</td><td>Deporte</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MAYO MINGO MARIA JESUS</strong></td><td>CARO, I.</td><td class="num">2014</td><td>GUNHANDLE porta agujas ergonomico</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>NEUENSCHWANDER JIMENO VERONICA</strong></td><td>ALFARO, E.</td><td class="num">2014</td><td>Intervencion estrategica de diseño y artesania en una agrupacion mapuche de artesanas textiles de la comuna de Loncoche</td><td>Artesanía, Artes aplicadas</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROJAS TRAVERSO MARIA PAZ</strong></td><td>DURAN, A.</td><td class="num">2014</td><td>boyle</td><td>Sustentabilidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROSAS SOTOMAYOR JOAQUIN</strong></td><td>GONZÁLEZ, A.</td><td class="num">2014</td><td>MAKECARE</td><td>Inclusión, Migración, Discapacidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>SCHONHERR NEUMANN NICOLE BEATRICE</strong></td><td>MORENO, P.</td><td class="num">2014</td><td>VERDO PROYECTO DE INDUMENTARIA SUSTENTABLE</td><td>Sustentabilidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TALADRIZ BENGOA MARIA BEGONA</strong></td><td>GALVEZ, F.</td><td class="num">2014</td><td>Matfont: herramienta colaborativa digital para notacion matematica</td><td>Educación</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>YUNGE SORUCO ANTONIA SILVESTRE</strong></td><td>RAMIREZ, R.</td><td class="num">2014</td><td>Diseño para Unidades de Emergencia Hospitalaria</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ARAOS ANDUEZA TRINIDAD</strong></td><td>MORENO, P.</td><td class="num">2015</td><td>EL NOGAL, ROPA ORGÁNICA PARA BEBÉS</td><td>Sustentabilidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ENRIQUEZ BARRERA ISIDORA</strong></td><td>RICO, M.</td><td class="num">2015</td><td>PIJAMAS ESPECIALIZADOS PARA PACIENTES ONCOLOGICAS</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MARZIANO YURIE GIANPIERO</strong></td><td>CARO, I.</td><td class="num">2015</td><td>Módulo de entrenamiento de toracocentesis</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PLASS LEHMANN COLOMBA</strong></td><td>ALLARD, J.</td><td class="num">2015</td><td>CHILE PARQUES</td><td>Turismo</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FFRENCH-DAVIS BASCUNAN TRINIDAD</strong></td><td>VIVANCO, T.</td><td class="num">2015</td><td>Leufu, reutilizacion de aguas de lavado</td><td>Sustentabilidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GONZALEZ GIL PILAR ANDREA</strong></td><td>POZO, P.</td><td class="num">2015</td><td>CHEVERE</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ORJUELA PASSARINI JENNY CAROLINA</strong></td><td>DURAN, A.</td><td class="num">2015</td><td>Barrera Ultrasónica de protección humano-canina en espacios de tránsito urbano</td><td>Ciudad, Ambiente, Equipamiento</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PEREZ VILLALOBOS MAGDALENA CECILIA</strong></td><td>ULIBARRI, X.</td><td class="num">2015</td><td>Pasaje de Ida, Historias de Migración</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TORO FERNANDEZ MARIA MANOLA</strong></td><td>MORENO, P.</td><td class="num">2015</td><td>La Hilandería</td><td>Moda</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VIAL UNDURRAGA MARIA TRINIDAD</strong></td><td>MOLLENHAUER, K.</td><td class="num">2015</td><td>La Imagen del Canto</td><td>Educación</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ASTUDILLO CURRIEL PAULINA ALEJANDRA</strong></td><td>ALVAREZ, P.</td><td class="num">2016</td><td>Chilenas de revista. Registro visual de publicaciones femeninas editadas en Chile 1900-1970</td><td>Cultura, Historia, Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_ASTUDILLO_CURRIEL_P.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CARAFI CALVO CATALINA</strong></td><td>MOLLENHAUER, K.</td><td class="num">2016</td><td>CUADRA</td><td>Deporte</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_CARAFI_CALVO_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FERNANDEZ LUENGAS DANIELA</strong></td><td>DURAN, A.</td><td class="num">2016</td><td>Lumi</td><td>Inclusión, Migración, Discapacidad</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_FERNANDEZ_LUENGAS_D.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FUENZALIDA GASMAN FRANCISCA</strong></td><td>VIVANCO, T.</td><td class="num">2016</td><td>Pilcán, concreto austral</td><td>Sustentabilidad</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_FUENZALIDA_GASMAN_F.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>KURASZ SUAREZ MARIA VICTORIA</strong></td><td>FARIAS, G.</td><td class="num">2016</td><td>Ayka, artesanía textil aymara</td><td>Cultura, Historia, Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_KURASZ_SUAREZ_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MOLINA DE LA MAZA MARIA PILAR</strong></td><td>ALLARD, J.</td><td class="num">2016</td><td>Kits de ayuda humanitaria</td><td>Otro</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_MOLINA_DELAMAZA_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PALMA GARCIA VALENTINA RAQUEL</strong></td><td>MANNS, P.</td><td class="num">2016</td><td>AMENAZA</td><td>Cultura, Historia, Religión</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PALMA IZCUE JOSEFINA</strong></td><td>ARIAS, R.</td><td class="num">2016</td><td>Carcel &amp; Calle</td><td>Inclusión, Migración, Discapacidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VALDES DOMINGUEZ MACARENA</strong></td><td>ALVAREZ, P.</td><td class="num">2016</td><td>Cachilupi. Publicación infantil impresa diseñada bajo un modelo de co-creación entre niños y adultos</td><td>Bienestar</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_VALDES_DOMINGUEZ_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VARELA REYES MARIA IGNACIA</strong></td><td>MANNS, P.</td><td class="num">2016</td><td>DE LA FIBRA AL PAPEL</td><td>Alimentación y Gastronomía</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_VARELA_REYES_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VARGAS DELAUNOY PAOLA ALEJANDRA</strong></td><td>AGUILA, E.</td><td class="num">2016</td><td>Caro Vefe</td><td>Economía y Empresa</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_VARGAS_DELAUNOY_P.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VILLALABEITIA FORD JOSEFA ANDREA</strong></td><td>MONROY, F.</td><td class="num">2016</td><td>Pasarelas San Borja, Experiencia Urbana en Altura</td><td>Ciudad, Ambiente, Equipamiento</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_VILLALABEITIA_FORD_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VIOLLIER RIOS NICOLAS</strong></td><td>PALMAROLA, H.</td><td class="num">2016</td><td>3D-QC</td><td>Otro</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_1_VIOLLIER_RIOS_N.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ERRAZURIZ ARELLANO DANIELA PAZ</strong></td><td>DE LOS RIOS, P.</td><td class="num">2016</td><td>COMAMOS - COMIDA &amp; COMPAÑÍA</td><td>Alimentación y Gastronomía</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_2_ERRAZURIZ_ARELLANO_D.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROMAN AYALA DANIELA FERNANDA</strong></td><td>PALMAROLA, H.</td><td class="num">2016</td><td>NUEVAS PROPUESTAS DE ACTIVISMO GRAFICO FEMINISTA</td><td>Cultura, Historia, Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2016_2_ROMAN_AYALA_D.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>URZUA GUZMAN ALEJANDRA</strong></td><td>FIGUEROA, B.</td><td class="num">2016</td><td>RURAL</td><td>Turismo</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CONTRERAS MALUENDA MAXIMILIANO ALONSO</strong></td><td>ARIAS, R.</td><td class="num">2017</td><td>Cintness</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_CONTRERAS_MALUENDA_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CORREA BULL CAROLINA SOFIA</strong></td><td>ALVAREZ, P.</td><td class="num">2017</td><td>Ñeque</td><td>Turismo</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_CORREA_BULL_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>COSTOYA RUIZ CARMINE MAITE</strong></td><td>RAMIREZ, R.</td><td class="num">2017</td><td>Rutero Topos de Escalada Deportiva en el Cajón del Maipo</td><td>Deporte</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_COSTOYA_RUIZ_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ECHAURREN MOLINA MARIA VIOLETA</strong></td><td>GONZÁLEZ, A.</td><td class="num">2017</td><td>ESENCIAL</td><td>Inclusión, Migración, Discapacidad</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GIAMBRUNI NUNEZ CONSTANZA MASSIEL</strong></td><td>HOCES, S.</td><td class="num">2017</td><td>NUDA</td><td>Deporte</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_GIAMBRUNI_NUNEZ_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>LUTTECKE ABRAMOVICH MARTIN</strong></td><td>ULIBARRI, X.</td><td class="num">2017</td><td>Nuevo Rosado</td><td>Moda</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_LUTTECKE_ABRAMOVICH_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MARTINI CARTER FRANCESCA ALESSANDRA</strong></td><td>DURAN, A.</td><td class="num">2017</td><td>BRÍO: Vehículo manual para el transporte de cargas a través de escaleras y terrenos irregulares</td><td>Transporte</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_MARTINI_CARTER_F.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>QUEIROLO MELENDEZ FRANCESCA</strong></td><td>MORENO, P.</td><td class="num">2017</td><td>Silvestre</td><td>Moda</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_QUEIROLO_MELENDEZ_F.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VEGA CORNEJO MARIO EMERSON</strong></td><td>MORENO, P.</td><td class="num">2017</td><td>Urraca: Colección de indumentaria experimental y experiencial</td><td>Moda</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_VEGA_CORNEJO_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VIDAL MIRANDA JOSEFINA FERNANDA ISABEL</strong></td><td>ALVAREZ, P.</td><td class="num">2017</td><td>Moda al paso: Historia de las boutiques y pequeñas tiendas de vestuario de la zona Oriente de Santiago (1967-1987)</td><td>Cultura, Historia, Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_1_VIDAL_MIRANDA_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BRACCHITTA PUELMA FRANCISCA</strong></td><td>MORENO, P.</td><td class="num">2017</td><td>Etérea, diseño de indumentaria tejida</td><td>Moda</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_BRACCHITTA_PUELMA_F.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>COBO ZWEEGMAN SEBASTIAN ANDRES</strong></td><td>CANCINO, J.</td><td class="num">2017</td><td>MIS MANOS ESTAN HECHAS PARA CREAR</td><td>Artes aplicadas</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_COBO_ZWEEGMAN_S.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CONTARDO RACZYNSKI ANTONIA</strong></td><td>ULIBARRI, X.</td><td class="num">2017</td><td>Sucede...</td><td>Cultura, Historia, Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_CONTARDO_RACZYNSKI_A.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CROXATTO VIVIANI JUAN CRISTOBAL</strong></td><td>NEIRA, J.</td><td class="num">2017</td><td>Megapterófono</td><td>Ciencia y Tecnología</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_CROXATTO_VIVIANI_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CUMPLIDO BAEZA CAMILA PAZ</strong></td><td>ULIBARRI, X.</td><td class="num">2017</td><td>Escúchame</td><td>Comunicación</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_CUMPLIDO_BAEZA_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>DIAZ MOLLER JOSEFA</strong></td><td>ALVAREZ, P.</td><td class="num">2017</td><td>RESCATE PATRIMONIAL FABRICA SCHAUB</td><td>Cultura, Historia, Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_DIAZ_MOLLER_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GROSSMAN KUPERMAN JOCELYN GALIT</strong></td><td>GONZÁLEZ, A.</td><td class="num">2017</td><td>PON</td><td>Alimentación y Gastronomía</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_GROSSMAN_KUPERMAN_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>HIRNHEIMER SCHAPIRO ILANIT</strong></td><td>CARO, I.</td><td class="num">2017</td><td>Nanai</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_HIRNHEIMER_SCHAPIRO_I.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>LORCA VALLEJO SIMON JOSE</strong></td><td>TIRONI, M.</td><td class="num">2017</td><td>Señorito: el nuevo hombre chileno</td><td>Moda</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_LORCA_VALLEJO_S.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MORALES AVILA CONSTANZA BELEN</strong></td><td>CORTEZ, F.</td><td class="num">2017</td><td>UXable: Guía de referencias y buenas prácticas para el diseño UX en ambientes ágiles</td><td>Economía y Empresa</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_MORALES_AVILA_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RIVEROS TORRES SARA BELEN</strong></td><td>HERMANSEN, P.</td><td class="num">2017</td><td>Experiencias y estrategias de madres de niños con aciduria glutárica tipo 1 en su paso por el sistema de salud: una investigación cualitativa desde el diseño</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_RIVEROS_TORRES_S.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROJAS LEVY DANIELA PASCALE</strong></td><td>DURAN, A.</td><td class="num">2017</td><td>Shelley: Soft-robot sintético-natural acuático, energéticamente sustentable</td><td>Ciencia y Tecnología</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_ROJAS_LEVY_D.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>SALINAS POBLETE JOSE MATIAS</strong></td><td>CORTEZ, F.</td><td class="num">2017</td><td>VITAMINIZA</td><td>Bienestar</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ZAVALA ABRAHAM CLAUDIA BEATRIZ</strong></td><td>GALVEZ, F.</td><td class="num">2017</td><td>Floranima</td><td>Educación</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2017_2_ZAVALA_ABRAHAM_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CORVALAN AZOCAR TOMAS IGNACIO</strong></td><td>MORENO, P.</td><td class="num">2018</td><td>METANOIEN, indumentaria de contra-narrativa</td><td>Identidad, Género</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2018_1_CORVALAN_AZOCAR_T.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PARR BORNHORN JAVIERA</strong></td><td>DURAN, A.</td><td class="num">2018</td><td>parr. P1. Artefacto cerámico enriquecido a partir del estudio de métodos culinarios tradicionales.</td><td>Alimentación, Gastronomía</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2018_1_PARR_BORNHORN_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BURGOS COMPARINI TRINIDAD PAZ</strong></td><td>CARO, I.</td><td class="num">2018</td><td>DIME: Salud, Diseño e Inclusión. Laboratorio de Fabricación de Salud y Diseño</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2018_2_BURGOS_COMPARINI_T.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>KRAUSS KREISBERGER ANDREA</strong></td><td>MOLLENHAUER, K.</td><td class="num">2018</td><td>MAD: Meniscal Antiextrusion Device</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2018_2_KRAUSS_KREISBERGER_A.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RODRIGUEZ ESCALA MARIA IGNACIA</strong></td><td>MOLLENHAUER, K.</td><td class="num">2018</td><td>HojadeQuinoa, sistema producto en base a la resignificación de la hoja de quinoa de Paredones</td><td>Cultura, Historia y Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2018_2_RODRIGUEZ_ESCALA_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ESPINOZA EMHART CAMILA ANDREA</strong></td><td>DURAN, A.</td><td class="num">2019</td><td>Symbios - Experiencia educativa de realidad virtual</td><td>Educación</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2019_1_ESPINOZA_EMHART_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GARRIDO MOLLER SOFIA</strong></td><td>ALVAREZ, P.</td><td class="num">2019</td><td>Habitantes de la Imagen, una exhibición en construcción colectiva</td><td>Otro</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2019_1_GARRIDO_MOLLER_S.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VARELA CERDA MARIA BELEN</strong></td><td>FIGUEROA, B.</td><td class="num">2019</td><td>De:Poderosas</td><td>Identidad, Género</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROMAGNOLI TORRES FERNANDA SOFIA</strong></td><td>MANNS, P.</td><td class="num">2019</td><td>Red APA. Red de Apoyo de Pares para el Automanejo de enfermedades crónicas</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2019_2_ROMAGNOLI_TORRES_F.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>VIAL LECAROS MATIAS DANIEL</strong></td><td>ALVAREZ, P.</td><td class="num">2019</td><td>Ecos rítmicos de la dictadura</td><td>Cultura, Historia y Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2019_2_VIAL_LECAROS_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CARVALHO SOLER MACARENA JOSEFINA</strong></td><td>VILLELA, A.</td><td class="num">2020</td><td>Transición a la Conservación</td><td>Sustentabilidad</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_1_CARVALHO_SOLER_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>OSSA PARRA ROSARIO BEATRIZ</strong></td><td>MOLLENHAUER, K.</td><td class="num">2020</td><td>#ViveElMonte</td><td>Turismo</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_1_OSSA_PARRA_R.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CORREA SARTORI CAROLINA MARIA</strong></td><td>MANNS, P.</td><td class="num">2020</td><td>CONTIGO, sistema inteligente de seguimiento y acompañamiento para los servicios de atención de urgencias</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_2_CORREA_SARTORI_C.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>GRANIFO CORREA MARÍA MAGDALENA</strong></td><td>MANNS, P.</td><td class="num">2020</td><td>Intervención lumínica experimental que favorezca la sincronización del ciclo circadiano en el ambiente de aprendizaje</td><td>Educación</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_2_GRANIFO_CORREA_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>IGLESIAS LARRAÍN MARÍA JACINTA</strong></td><td>MANNS, P.</td><td class="num">2020</td><td>PRIMEROS VÍNCULOS. Apego en las secciones de maternidad</td><td>Otro</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_2_IGLESIAS_LARRAIN_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>LORENZINI RATY FELIPE ANDRES</strong></td><td>GONZÁLEZ, A.</td><td class="num">2020</td><td>BAGUAL, sistema de cruce de ríos autosuficiente</td><td>Transporte</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2020_2_LORENZINI_RATY_F.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BERNSTEIN FABRES MARGARITA</strong></td><td>ALFARO, E.</td><td class="num">2021</td><td>LA CUERPA, LA CALLE Y LA RESISTENCIA</td><td>Cultura, Historia y Religión</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2021_1_BERNSTEIN_FABRES_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TRONCOSO DELFIN NICOLE ANDREA</strong></td><td>WUTH, P.</td><td class="num">2021</td><td>IFA. Interpolación de futuros alternativos, metodología de futurología especulativa y participativa para la innovación tecnológica</td><td>Ciencia y Tecnología</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2021_1_TRONCOSO_DELFIN_N.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ORTUZAR TORNERO MARIA FERNANDA</strong></td><td>SANCHEZ, P.</td><td class="num">2021</td><td>Corpus Testimonial</td><td>Otro</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2021_2_ORTUZAR_TORNERO_M.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PEIRANO PRADA JOSEFINA ANDREA</strong></td><td>RIOS, C.</td><td class="num">2021</td><td>Vincu</td><td>Salud</td><td><a href="https://diseno.uc.cl/memorias/pdf/memoria_dno_uc_2021_2_PEIRANO_PRADA_J.pdf" class="uc-btn btn-inline btn-inline--bold" target="_blank" rel="noopener">PDF <span class="uc-icon">picture_as_pdf</span></a></td><td class="num">7,0</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TORRES MUÑOZ FRANCISCA JOSEFA</strong></td><td>DURAN, A.</td><td class="num">2021</td><td>DiiSO</td><td>Salud</td><td>—</td><td class="num">7,0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function () {
+                var q = document.getElementById("q"), fy = document.getElementById("fy"), fa = document.getElementById("fa");
+                var rows = document.querySelectorAll("#tbl tbody tr"), c = document.getElementById("count");
+                function f() {
+                    var t = q.value.toLowerCase(), n = 0;
+                    rows.forEach(function (r) {
+                        var td = r.children, ok =
+                            r.textContent.toLowerCase().indexOf(t) > -1 &&
+                            (!fy.value || td[2].textContent === fy.value) &&
+                            (!fa.value || td[4].textContent === fa.value);
+                        r.style.display = ok ? "" : "none";
+                        if (ok) n++;
+                    });
+                    c.textContent = n + " proyectos";
+                }
+                [q, fy, fa].forEach(function (x) { x.addEventListener("input", f); });
+                f();
+            })();
+        </script>
+
+        <footer class="uc-footer">
+            <div class="container pb-80">
+                <div class="row" data-accordion>
+                    <div class="col-md-4">
+                        <div class="mb-40">
+                            <a href="/">
+                                <img
+                                    src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/logo-uc-blanco.svg"
+                                    alt="Pontificia Universidad Católica de Chile"
+                                    style="max-width: 240px"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <p class="uc-subtitle subtitle-extended color-white mt-32">ESCUELA DE DISEÑO</p>
+
+                            <ul class="uc-footer_social">
+                                <!-- agregar enlaces a redes sociales correspondientes -->
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-twitter.svg"
+                                            alt="Twitter"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-facebook.svg"
+                                            alt="Facebook"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-instagram.svg"
+                                            alt="Instagram"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-linkedin.svg"
+                                            alt="Linkedin"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-youtube.svg"
+                                            alt="Youtube"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img
+                                            src="https://kit-digital-uc-prod.s3.amazonaws.com/assets/social-icon-flickr.svg"
+                                            alt="Flickr"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uc-footer_list-title footer-collapse-title" data-collapse="footerNavExample01">
+                            CONTACTO
+                        </div>
+                        <ul class="uc-footer_list footer-collapse" data-toggle="footerNavExample01">
+                            <li>Fono: +56 2 23545534</li>
+                            <li>El Comendador 1916, Providencia - Chile</li>
+                            <li>
+                                <a href="#"
+                                    ><a
+                                        href="https://www.google.com/maps/place/Campus+Lo+Contador+Pontificia+Universidad+Cat%C3%B3lica+de+Chile/@-33.4202518,-70.6202817,17z/data=!4m13!1m7!3m6!1s0x9662cf608d0f317b:0x844e3a8482d4800c!2sEl+Comendador+1916,+Providencia,+Regi%C3%B3n+Metropolitana!3b1!8m2!3d-33.4202518!4d-70.618093!3m4!1s0x0:0x179482715007d19f!8m2!3d-33.4196244!4d-70.618585"
+                                        >¿Cómo llegar?</a
+                                    ></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="uc-footer_list-title footer-collapse-title" data-collapse="footerNavExample02">
+                            ETC.
+                        </div>
+                        <ul class="uc-footer_list footer-collapse" data-toggle="footerNavExample02">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="uc-global-footer"></div>
+        </footer>
+    </body>
+</html>
