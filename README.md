@@ -2,6 +2,4 @@
 
 https://kitdigital.uc.cl/diseno/principios
 
-- - - - - - - 
-
 Segundo semestre 2026.
